@@ -5,9 +5,9 @@
 There are a number of research discover tools that you may have access to
 on your campus, but here are some that do not require subscriptions (to search):
 
-* [SemanticScholar](https://semanticscholar.org): exceptional tool for modern discovery tactics
-* [Dimensions.ai](https://dimensions.ai): excellent tool for additional discovery; many additional features for discovering domain research
-* GoogleScholar: classic tool, but has poor integration with DOI importation and can provide spurious results; often useful for finding author PDFs when publisher version is paywalled
+* [**SemanticScholar**](https://semanticscholar.org): exceptional tool for modern discovery tactics
+* [**Dimensions.ai**](https://dimensions.ai): excellent tool for additional discovery; many additional features for discovering domain research
+* **GoogleScholar**: classic tool, but has poor integration with DOI importation and can provide spurious results; often useful for finding author PDFs when publisher version is paywalled
 
 
 ## Citation and Bibliographic Management
@@ -25,7 +25,7 @@ on your campus, but here are some that do not require subscriptions (to search):
 
 ## Writing
 
-* Distraction-free writing: [theory](), [practice]() and some [fun]()
+* **Distraction-free writing**: [theory](https://), [practice](https://) and some [fun](https://)
 * [**Markdown**](https://www.markdownguide.org/): easy, distration-free markup writing for durability and portability; takes minutes to learn
 * [**Pandoc**](https://pandoc.org): free, open source conversion tool "swiss army knife" of document formats 
 * Guide to [scientific writing in Markdown]()
