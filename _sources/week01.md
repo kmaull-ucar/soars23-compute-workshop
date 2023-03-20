@@ -8,8 +8,9 @@ Week 1
 :animate: fade-in
 :open:
 
+* Domain-bound scientific computing
 * (re)Introduction to Jupyter
-* developing computational narratives
+* computational narratives
 * understanding basic git and Github
 * understanding the role of Linux in scientific computing 
 ````
