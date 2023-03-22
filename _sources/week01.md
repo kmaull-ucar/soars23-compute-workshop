@@ -8,14 +8,42 @@ Week 1
 :animate: fade-in
 :open:
 
-* Domain-bound scientific computing
+* scientific computing today
 * (re)Introduction to Jupyter
 * computational narratives
 * understanding basic git and Github
 * understanding the role of Linux in scientific computing 
 ````
 
-## Jupyter
+## Scientific Computing Today
+
+With the rise of advanced, ubiquitous and inexpensive computing, nearly every scientific today discipline has (with excitement or hesitation) embraced computing  -- and in fact, _some_ computing skill is a practical _requirement_ to do almost any domain-specific work, no matter your discipline (even including the humanities).
+
+It is daunting to gain skill in the tools and technologies that are driving scientific advancement, and the process takes time and requires continuous learning, since the dominant tools today may not be the same two, five or ten years into the future.
+
+There are several axes upon which scientific computing skill must develop: 
+
+* foundational **computational thinking** and **algorithmic problem solving**, 
+* **software support tools**, systems interaction and **programming skill**,
+* **data analysis** and statistical inference skill.
+
+**Computational thinking** {cite:ps}`wing_computational_2006` is the modern approach to learning how to write code for computers, but it extends well beyond merely programming machines and into _strategic_ problem solving with _automation_ and _data_.  This is what makes the conversation so apt for scientific thinking, because at the heart of all science is data, and most modern scientific data are overwhelmingly large and thus _require automation_. To be successful today, you must understand the foundations of how algorithms facilitate scientific problem solving with large amounts of data, accelerating advancements at a pace we have yet to understand.
+
+**Software support tools** are required to interact with the myriad computer systems, files and platforms for computing.  These tools may include:
+
+* software revision control systems (i.e. git), 
+* software development and execution platforms (e.g. Jupyter), 
+* virtualization platforms (e.g. Docker), 
+* programming languages (e.g. Python, Javascript) and markup languages (e.g. Markdown, HTML)
+* operating systems optimized for performance scientific computing (e.g. Linux)
+
+**Data analysis and statistical inference** cannot be avoided when talking about _interpretation_ of scientific data and analysis.
+
+Today, however, the language in broad use across large swaths of scientific domains from biology, chemistry, physics, atmospheric science and many others is Python. 
+
+## Software Support Tools
+
+### Jupyter
 
 As you may know, Jupyter is a simple, interactive platform for writing Python code.  To be certain, the Jupyter environment supports multiple languages, including [R](https://www.r-project.org/), [Julia](https://julialang.org/) and Java to name a few.  In fact, the name (and spelling) for the work comes from (Ju)lia, (Pyt)hon and (R).
 
@@ -30,7 +58,7 @@ Jupyter notebooks can be created in the [standard notebook environment](https://
 
 <iframe  title="YouTube video player" width="640" height="480"  src="https://www.youtube.com/embed/A5YyoCKxEOU" frameborder="0" allowfullscreen></iframe>
 
-## Structure of Notebooks and Narratives
+#### Structure of Notebooks and Narratives
 Notebooks impart a great deal of flexibility to the creator, and with that flexibility comes some basic responsibilities.  Though not every notebook is meant to be shared, you should assume that the majority of your notebooks _will_ be shared or executed by at least one other person -- even if you take the approach that the one other person is your _future self five years from now that might have completely forgotten what you were working on at the time the notebook was created_.  
 
 ```{tip}
@@ -43,7 +71,7 @@ Here is a simple example:
 
 * [Example #1](./notebooks/example01.ipynb) #todo link externally
 
-### Computational Narratives
+#### Computational Narratives
 The Jupyter environment is designed to support what are called _computational narratives_
 we'll talk about what they are and then we're going to create one ourselves. there's really nothing special about it -- in fact we can initially approach it as a fancy way to indicate a "notebook" that pays special attention to a developing good flow through the core research, implementation (computation) and narrative explanation of that research.  In the end, narratives support the researcher, the audience and the research itself.
 
@@ -54,7 +82,7 @@ A good narrative maintains focus on the what, why and how of your work.  Keep fo
 ```
 A good narrative has one objective: to describe the process and workflow of your research so that you and others understand what was done, and ostensibly how to reproduce it, not only through the original notebook, but through any other means (copying, borrowing, etc.). The computational narrative truly emerges as a virtuous relationship between code, computation and the expository narrative and is more than just a description of what was done (though that is a great place to start in the absence of anything else), but rather a detailed account of the purpose of the notebook and the underlying work, the decisions that were made at various points in the notebook and _why_ they were made. doing this not only provides the context necessary for others to understand what was done, how and why, but it is also an important reminder to yourself of these things, since as time moves forward, notebooks accumulate and it is easy to forget all of these details.
 
-### Narrative Structure & Flow
+#### Narrative Structure & Flow
 Often we are faced with developing a notebook with only minimal information about the end goal.  We want to write some code, produce some output (in the form of graphs, tables, etc) and then we might want to share that with others.  The notebook provides an opportunity to layer our work in a way that a commitment to one notebook is not necessary.  Indeed, our first notebooks are often scratch notebooks (but many times we don't actually see them that way and they end up as the final notebook).  We would like to avoid the problem of scratch notebooks turning into final notebooks and so planning your narrative structure (once you get going in a direction) is important.
 
 A single notebook should be designed to guide the narrative through a problem, computational resolution (or attempt at resolution) and summary of outcome(s).  This will include:
@@ -71,7 +99,7 @@ A simple notebook will just have those three components and repeat them for each
 
 You may eventually come to the conclusion that a single large notebook is confusing and diminishes the value of your work.  You may find some parts of your narrative are algorithmically intensive and need addition exposition or more complete mathematical treatment.  Some of that explanation may be in the form of code cells, and it may be appropriate to develop multiple notebooks to manage the complexity of your work.  Recognizing this early can be an important step toward good narratives.
 
-### Computational Flow
+#### Computational Flow
 The computational flow of your notebook refers to the _code cells_ of your notebook.  This might also include the output of those cells, including graphics, plots and visualizations, as well as text output (e.g. the result of a calculation).  There are simple steps to keep your code as tidy as possible so that it is not only reusable, but that cells can be rerun easily with their appropriate contexts and imports.  
 
 Consider:
@@ -100,7 +128,7 @@ for i in range(0,20):
 
 so what's in a narrative you have images of visuals usually those the output cells you know if you ran a patters or you ran a plot or you read a book whatever out lot of times you'll have your formulas exploration of algorithms you have links to other notebooks other data other modules and those are the no books could be a collection of notebooks that you is up our part of your broader narrative
 
-### Cross-notebook Linking, Table of Contents and Flow
+#### Cross-notebook Linking, Table of Contents and Flow
 One of the most profoundly useful and perhaps underused features of the notebook ecosystem, is notebook linking.  By this we mean developing notebooks that link to other notebooks that represent a larger collection.  For example, when a single notebook it large and complex, it may be necessary to consider breaking it up into other notebooks.  Unifying one more more notebooks is then a simple matter of linking them.
 
 For example, a markdown cell in a notebook linking to another would look like this:
@@ -117,22 +145,19 @@ Links can be two-way, and it is a good idea to link _back_ to the notebook you l
 
 Should you choose to develop a single linear notebook, a table of contents can be a good idea.  You can manually create your TOC or try one of several methods for automatically creating it.  Either way, your notebooks will increase their utility by doing this.
 
-
-### Citation
+#### Citation
 Citation, acknowledgement and attribution are the cornerstone of collaboration and are at the heart of scientific communication.  A notebook may have citations to many things: academic papers, datasets, software, external resources, computing resources, licenses, etc.  It should be a reminder to you that attribution is an important thing to your own notebook as well. When you share your notebook with others, or submit is as a supplement to a published paper or presentation, it may be worth considering getting a permanent identifier such as a DOI (Digital Object Identifier) and providing appropriate attribution instructions in your own notebook, especially if they are in Github or some other public repository.
 
 ```{tip}
 Consider the services at Zenodo ([https://zenodo.org](https://zenodo.org)) and Figshare ([https://figshare.org](https://figshare.org)) which can help you mint a permanent and persistent DOI (Digital Object Identifier).  Learn more about DOIs [here](https://www.doi.org/factsheets/DOIKeyFacts.html).
 ```
 
-
-
-## Basic git and Github
+### git and Github
 
 
 Though notebooks do not require it, the use of git and Github are highly valuable tools in your scientific workflow.  But before using either, it should be clear what each of these tools are and what they bring to the table for your work.
 
-### git
+#### git
 
 [git]() in its simplest form, is a tool that allows you to keep track of changes to files.  Build atop the heritage of software revision control systems, which function to make sure source code changes can be tracked, and in the collaborative case, merged or otherwise monitored by a team of people (developers, etc.).  git is its own tool and should not be confounded with _Github_, which can be seen as a collaborative front end to tools like git.  You can use git without Github, and while _technically_ you can use Github without git, intermediate and advanced use require it.
 
@@ -150,7 +175,7 @@ Git is mostly a command line tool, though there are several front end tools that
 * 
 * 
 
-### Github
+#### Github
 
 ![](./github_com.png)
 

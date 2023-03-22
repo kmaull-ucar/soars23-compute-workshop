@@ -1,5 +1,9 @@
 # Tools, Guides and Inspiration
 
+## Python and Jupyter
+
+* [Project Jupyter](https://jupyter.org/)
+
 ## Research Discovery
 
 There are a number of research discover tools that you may have access to
@@ -29,6 +33,11 @@ on your campus, but here are some that do not require subscriptions (to search):
 * [**Markdown**](https://www.markdownguide.org/): easy, distration-free markup writing for durability and portability; takes minutes to learn
 * [**Pandoc**](https://pandoc.org): free, open source conversion tool "swiss army knife" of document formats 
 * Guide to [scientific writing in Markdown]()
-* [**$\LaTeX$**](https://www.latex-project.org/): a rabbit hole perhaps not worth going down ... but the [cheat sheet]() can be used to seemlessly integrate mathematics into your Markdown writing
-    * [*OverLeaf*]() : helps overcome some of the LaTeX barriers and encourage collaboration
+* [**$\LaTeX$**](https://www.latex-project.org/): a rabbit hole perhaps not worth going down ... but with a cheat sheet you can be used to seemlessly integrate mathematics into your Markdown writing
+    * [LaTeX Math cheat sheet](https://joshua.smcvt.edu/undergradmath/undergradmath.pdf) for undergraduates
+    * [*OverLeaf*](https://overleaf.com) : helps overcome some of the LaTeX barriers and encourage collaboration
 
+## Data Science and Data Analytics
+
+* [Earth Data Analytics Online Certificate](https://www.earthdatascience.org/courses/intro-to-earth-data-science/)
+    * an excellent resource to be aware of even if you don't want to get the certificate!

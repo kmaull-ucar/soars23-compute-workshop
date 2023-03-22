@@ -1,6 +1,6 @@
 # Readings
 
 ```{bibliography}
-:style: plain
+:style: unsrtalpha
 :all:
 ```
