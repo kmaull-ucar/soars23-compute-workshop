@@ -20,10 +20,11 @@ The goals of this workshop are manifold, but by the end of the summer you will:
 **Build a software toolkit** to: 
 * understand the importance of platforms like [Jupyter](https://jupyter.org) to understand how to structure, organize, execute, explain and share your project code
 * explore the Python libraries and support tools that will increase your productivity and code effectiveness
-* understand how to use [Github](https://github.com) (among others) and the role it plays in scientific discovery, reuse, learning and sharing 
+* understand how to use [Github](https://github.com) (among others) and the role [open source software]() plays in scientific discovery, reuse, learning and sharing 
 
-**Explore Research computing skills** which include :
-* 
+**Explore research and computing skills** which include:
+* effective communication and documentation of your code
+* understanding the role of data citation and open source software
 
 # Syllabus
 
@@ -31,7 +32,7 @@ The goals of this workshop are manifold, but by the end of the summer you will:
 |  **Week** | **Topic**             |   **Content Summary**      |
 |:---------:|-----------------------|----------------------------|
 |  [1](./week01)    |   **Scientific computing, Computational Workflows and Jupyter/Python** | scientific computing today, (re)Introduction to Jupyter; understanding how git fits into your workflow; How Github/Gitlab/Bitbucket fit into your workflow; developing good computational narratives in Jupyter; Linux |
-|  2    | **Python Fundamentals Review**                   |  Python constructs, loops, dictionaries, data structures, core libraries, Python3 roadmap, Anaconda distro |
+|  [2](./week02)    | **Python Fundamentals Review**                   |  Python constructs, loops, dictionaries, data structures, core libraries, Python3 roadmap, Anaconda distro |
 |  3    | **Algorithms in Python**                         | Computational thinking review; problem solving and thinking through algorithms; reducing complexity and understanding |
 |  4    | **Python Libraries for Geoscience I: Hands-on Overview** | Core libraries in Python for Geo; when to use what; resources that you need to know about now; using some libraries in real-world demo |
 |  5    | **Python Libraries for Geoscience II: Hands-on Data** | Continuation of Geo libraries in Python with a hands-on focus on practical manipulation of data |
