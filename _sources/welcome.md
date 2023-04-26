@@ -6,18 +6,24 @@ Welcome to the 2023 SOARS Computational Thinking Workshop!
 
 The goals of this workshop are manifold, but by the end of the summer you will:
 
-[**Scientific**] 
-* have a broader understanding of the role computational thinking plays in scientific research
+**Explore Scientific Computing** to:
+
+* develop a broader understanding of the role computational thinking plays in scientific research
 * understand some of the tools and workflows for modern scientific research
 * understand the importance of open science, data, reproducibility, sharing and archiving in modern research
 
-[**Python**] 
-* get some exposure to [Python](https://python.org) and how to use it for a variety of basic to complex problems
+**Develop Python skills** to:
+* get [Python](https://python.org) exposure and learn how to the language for a variety of basic to complex problems in scientific computing
 * develop an understanding of the core libraries for general Python and geosciences Python
 * get hands-on experience with Jupyter Lab / Notebooks
 
-[**Software**] 
-* understand the importance of platforms like Github to discover, reuse, learn and share 
+**Build a software toolkit** to: 
+* understand the importance of platforms like [Jupyter](https://jupyter.org) to understand how to structure, organize, execute, explain and share your project code
+* explore the Python libraries and support tools that will increase your productivity and code effectiveness
+* understand how to use [Github](https://github.com) (among others) and the role it plays in scientific discovery, reuse, learning and sharing 
+
+**Explore Research computing skills** which include :
+* 
 
 # Syllabus
 

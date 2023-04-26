@@ -14,6 +14,10 @@ on your campus, but here are some that do not require subscriptions (to search):
 * **GoogleScholar**: classic tool, but has poor integration with DOI importation and can provide spurious results; often useful for finding author PDFs when publisher version is paywalled
 
 
+## AI Tools
+
+* [phind](https://www.phind.com/): an AI search engine for developers and great resource to help with your coding experiences
+
 ## Citation and Bibliographic Management
 
 * [**Zotero**](https://zotero.org): free, very useful and low barrier bibliographic management

@@ -17,14 +17,14 @@ Week 1
 
 ## Scientific Computing Today
 
-With the rise of advanced, ubiquitous and inexpensive computing, nearly every scientific today discipline has (with excitement or hesitation) embraced computing  -- and in fact, _some_ computing skill is a practical _requirement_ to do almost any domain-specific work, no matter your discipline (even including the humanities).
+With the rise of advanced, ubiquitous and inexpensive computing, nearly every scientific  discipline today has (with a mix of excitement and/or hesitation) embraced computing  -- and in fact, _some_ computing skill is a practical _requirement_ to do almost any domain-specific work, no matter your discipline (even including the humanities).
 
 It is daunting to gain skill in the tools and technologies that are driving scientific advancement, and the process takes time and requires continuous learning, since the dominant tools today may not be the same two, five or ten years into the future.
 
-There are several axes upon which scientific computing skill must develop: 
+There are several axes that support the scientific computing skill today: 
 
 * foundational **computational thinking** and **algorithmic problem solving**, 
-* **software support tools**, systems interaction and **programming skill**,
+* **software support tools**, systems interaction, **programming skill** and **open source software**,
 * **data analysis** and statistical inference skill.
 
 **Computational thinking** {cite:ps}`wing_computational_2006` is the modern approach to learning how to write code for computers, but it extends well beyond merely programming machines and into _strategic_ problem solving with _automation_ and _data_.  This is what makes the conversation so apt for scientific thinking, because at the heart of all science is data, and most modern scientific data are overwhelmingly large and thus _require automation_. To be successful today, you must understand the foundations of how algorithms facilitate scientific problem solving with large amounts of data, accelerating advancements at a pace we have yet to understand.
@@ -40,6 +40,12 @@ There are several axes upon which scientific computing skill must develop:
 **Data analysis and statistical inference** cannot be avoided when talking about _interpretation_ of scientific data and analysis.
 
 Today, however, the language in broad use across large swaths of scientific domains from biology, chemistry, physics, atmospheric science and many others is Python. 
+
+`````{admonition} Open Source Software
+:class: info
+
+[Open source software (OSS)](https://opensource.org/) is a software model that promotes transparency, proper attribution (licensing), sharing, distribution and community contribution.  Borrowing from some of the ideals of [Free and Open Source Softwware (FOSS)](), which is a distinctly different (but also similar) model to OSS, scientific research should strive to promote the same ideals: transparency, sharing and community.
+`````
 
 ## Software Support Tools
 
