@@ -16,7 +16,7 @@ on your campus, but here are some that do not require subscriptions (to search):
 
 ## AI Tools
 
-* [phind](https://www.phind.com/): an AI search engine for developers and great resource to help with your coding experiences
+* [**phind**](https://www.phind.com/): an AI search engine for developers and great resource to help with your coding experiences
 
 ## Citation and Bibliographic Management
 
