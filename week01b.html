@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Week 2 &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
+    <title>Python Fundamentals &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tools, Guides and Inspiration" href="tools.html" />
-    <link rel="prev" title="Week 1" href="week01.html" />
+    <link rel="next" title="Jupyter Fundamentals" href="week01c.html" />
+    <link rel="prev" title="Scientific Computing, Computational Workflows and Jupyter/Python" href="week01a.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,17 +113,34 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="week01.html">
-   Week 1
+  <a class="reference internal" href="week01a.html">
+   (*) Scientific Computing Today
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Week 2
+   Python Fundamentals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week01c.html">
+   Jupyter Fundamentals
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tools &amp; Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="tools.html">
    Tools, Guides and Inspiration
@@ -207,7 +224,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/week02.md"
+        <a href="_sources/week01b.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -276,23 +293,6 @@ title="Print to PDF"
    Anaconda and Python
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#object-oriented-programming-in-python">
-   Object-oriented programming in Python
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#demo-a-temperature-object">
-     Demo: a Temperature object
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#developing-strategies-for-python-based-jupyter-notebooks">
-   Developing strategies for Python-based Jupyter notebooks
-  </a>
- </li>
 </ul>
 
     </nav>
@@ -302,7 +302,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Week 2</h1>
+                <h1>Python Fundamentals</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -322,23 +322,6 @@ title="Print to PDF"
    Anaconda and Python
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#object-oriented-programming-in-python">
-   Object-oriented programming in Python
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#demo-a-temperature-object">
-     Demo: a Temperature object
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#developing-strategies-for-python-based-jupyter-notebooks">
-   Developing strategies for Python-based Jupyter notebooks
-  </a>
- </li>
 </ul>
 
                         </nav>
@@ -349,8 +332,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="week-2">
-<h1>Week 2<a class="headerlink" href="#week-2" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="python-fundamentals">
+<h1>Python Fundamentals<a class="headerlink" href="#python-fundamentals" title="Permalink to this headline">#</a></h1>
+<p>Python is a general purpose programming language.  As such, it is possible to write nearly any kind of program in it, sans some low-level hardware-based code (though their are workarounds to integrate lower-level languages like C into Python).</p>
+<p>Generally speaking, Python is not valued for its speed, though it can hold its own with a few tricks.  Instead, its strength is in its clarity, accessibility and flexibility.  It provides a wide array of important language constructs out of the box to make a beginner feel invited, while also having a large number of advanced and mature libraries to help the professional developer feel productive and right at home.</p>
 <section id="a-quick-tour-of-python">
 <h2>A Quick Tour of Python<a class="headerlink" href="#a-quick-tour-of-python" title="Permalink to this headline">#</a></h2>
 <p>Python is a large and complex language.  While you may have had access to the language through geoscience and/or data science contexts, it is a <em>general purpose</em> programming language that one can develop nearly any kind of program: from user interface applications to servers and low-level APIs (to the extent that a hardware-aware language like C/C++ may be invoked).</p>
@@ -368,14 +353,34 @@ title="Print to PDF"
 <td class="text-align:left"><p>Basic Python introduction</p></td>
 <td class="text-align:center"><p><a class="reference internal" href="nb/w02_python_tour_01_basics.html"><span class="doc std std-doc">nb/w02_python_tour_01_basics.ipynb</span></a></p></td>
 </tr>
+<tr class="row-odd"><td class="text-align:center"><p>2</p></td>
+<td class="text-align:left"><p>Python control structures</p></td>
+<td class="text-align:center"><p><a class="reference internal" href="nb/w02_python_control_structures.html"><span class="doc std std-doc">nb/w02_python_control_structures.ipynb</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>3</p></td>
+<td class="text-align:left"><p>Key Python data structures</p></td>
+<td class="text-align:center"><p><span class="xref myst">nb/w02_python_data_structures.ipynb</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>4</p></td>
+<td class="text-align:left"><p>Core Python libraries</p></td>
+<td class="text-align:center"><p><span class="xref myst">nb/w02_python_core_libraries.ipynb</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>5</p></td>
+<td class="text-align:left"><p>More Python 3</p></td>
+<td class="text-align:center"><p><span class="xref myst">nb/w02_python3.ipynb</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>6</p></td>
+<td class="text-align:left"><p>Advance Topic: Object-Oriented Programming</p></td>
+<td class="text-align:center"><p><a class="reference internal" href="nb/w02_oop.html"><span class="doc std std-doc">nb/w02_python3.ipynb</span></a></p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="anaconda-and-python">
 <h2>Anaconda and Python<a class="headerlink" href="#anaconda-and-python" title="Permalink to this headline">#</a></h2>
-<p><a class="reference external" href="https://anaconda.com">Anaconda</a> is a platform for Python that pre-packages a large number of useful Python libraries, tools and environment configurations that are useful for data science-related work.  The platform enables a large number of tools that help manage and install a wide array of Python packages (in and out of the data science scope).  It is an open source platform – and thus the community versions are free to install and use, but Anaconda also has commercial enterprise tools that enable large data analyses at a cost.</p>
-<p>You will want to install Anaconda on your machine using the recommended installation procedures.  Make sure that you keep your installation up-to-date by installing the recommended updates, since this will make sure you are running the latest packages and that they are optimally compatible with one another.</p>
-<p>Tutorials to consider to accelerate learning how to use Anaconda are listed below:</p>
+<p><a class="reference external" href="https://anaconda.com">Anaconda</a> is a platform for Python that pre-packages a large number of Python libraries, tools and environment configurations that are useful for data science-related work.  The platform enables a large number of tools that help manage and install a wide array of Python packages (in and out of the data science scope).  It is an open source platform – and thus the community versions are free to install and use, but Anaconda also has commercial enterprise tools that enable large data analyses at a cost.</p>
+<p>You will want to install Anaconda on your Windows, MacOS or Linux machine using the recommended installation procedures.  Make sure that you keep your installation up-to-date by installing the recommended updates, since this will make sure you are running the latest packages and that they are optimally compatible with one another.</p>
+<p>Tutorials to consider to accelerate learning how to use Anaconda are listed below for Windows, MacOS and Linux:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.anaconda.com/free/anaconda/getting-started/index.html">Getting started with Anaconda Distribution
 </a> (<a class="reference external" href="http://anaconda.com">anaconda.com</a>)</p></li>
@@ -383,123 +388,6 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://medium.com/geekculture/how-i-setup-for-python-development-in-windows-with-wsl2-and-why-you-should-consider-too-24187c9ed3a0">How I Setup for Python Development in Windows with WSL2 and Why You Should Consider Too</a> (<a class="reference external" href="http://medium.com">medium.com</a>)</p></li>
 </ul>
 <p>You may also hear the term “conda” when referring to “Anaconda”, but “conda” is the package manager and command line tool for managing the Python libraries and packages in Anaconda, the distribution.</p>
-</section>
-<section id="object-oriented-programming-in-python">
-<h2>Object-oriented programming in Python<a class="headerlink" href="#object-oriented-programming-in-python" title="Permalink to this headline">#</a></h2>
-<p>While an intermediate topic, it goes without saying that as your code gets more complex, you will be inclined to used deeper features of the programming language.</p>
-<p>One such feature is what are called “objects”.  This is not meant to be a complete introduction to objects or object-oriented programming in Python, but rather a gentle introduction to the <em>conceptual</em> framing of objects and how you might use them in your own programs.</p>
-<p>One easy way to think about objects is to rest your mind a little and look at your programs as more abstract components and the interplay of those components.  For example, when you think of the ideas around a “list”, you can abstractly think about what it represents, what properties it has, and perhaps how the abstraction of a list differs from that, say of a set.  A set has the unique property that items in the set are not repeated, while in a list, not only can items be repeated, the ordering of those items is usually important – and set  ordering is not usually important.</p>
-<p>So <em>abstractly</em> a list can be thought of as</p>
-<ul class="simple">
-<li><p>an ordered grouping of things, that</p></li>
-<li><p>things can be added to or removed from.</p></li>
-</ul>
-<p>So what might you want to <em>know</em> about a list?  You might like to know:</p>
-<ul class="simple">
-<li><p>how many things are in the list?</p></li>
-<li><p>what kinds of  things (e.g. numbers, strings, other lists) are in the list?</p></li>
-</ul>
-<p>Also what might you want to <em>do</em> to a list?  You might want to:</p>
-<ul class="simple">
-<li><p>add and removed items from the list</p></li>
-<li><p>remove all items from the list</p></li>
-<li><p>take two lists and merge them</p></li>
-<li><p>and so on</p></li>
-</ul>
-<p>You can see the things you might want to <em>do</em> with the list and in some cases may exceed our interest in complicating the concept of list, thus we might want to think about the <em>essential</em> things we want to do with a list, then let the end user of a list do other things.  This is where our thoughtfulness in building abstractions come in:  if we make things too abstract, they may not be useful and end users may have difficulty understanding the <em>reason</em> for such abstractions; if we don’t make things abstract enough, we end up not reaping the benefits of abstraction.  There is a careful balance that must be struck when developing abstractions, and there is often more art than science when building them.</p>
-<p>Abstractions in Python can be captured a number of ways, but one critical tool is the “object”.  An object in Python is a tool that at some point you may consider integrating into your code.</p>
-<p>Initially, there are three things you will need to know about an object:</p>
-<ol class="simple">
-<li><p>objects have properties, that capture the <em>state</em> of the object;</p></li>
-<li><p>objects have functions (also known as interfaces, APIs, etc.) which encode the <em>behavior</em> of an object which are essential to perform actions on that object (and/or it interaction with other objects);</p></li>
-<li><p>objects have a lifespan – that is they are <em>created</em> and ultimately <em>destroyed</em>.</p></li>
-</ol>
-<p>The concepts <strong>state</strong> and <strong>behavior</strong> are essential to object-oriented programming.</p>
-<p>Objects are realized in what are called “classes”, and classes are realized in what are called “instances”.  We will “instantiate” a “class”, where the “class” is the programmatic manifestation of the “object”.  It sounds complex, but once you see it in action, it will be clearer.</p>
-<p>So let’s get beyond the word games and play.</p>
-<section id="demo-a-temperature-object">
-<h3>Demo: a Temperature object<a class="headerlink" href="#demo-a-temperature-object" title="Permalink to this headline">#</a></h3>
-<p>Let’s say we want to abstract away the concept of “temperature”.</p>
-<p>What exactly is “temperature”?</p>
-<ul class="simple">
-<li><p>it a measure of hotness or coldness</p></li>
-<li><p>it is expressed with some known units on some known scale (can be arbitrary, but usually is informative, if it is)</p></li>
-</ul>
-<p>From this we can deduce “temperature”, is, if not linear, increase or decreasing at some expected interval.  Let’s say for now our “temperature object” is always linear so that when we use it, we can know what to expect: when the “temperature” goes up, it gets warmer, when it goes down, it gets cooler.</p>
-<p>Let’s see how we might model this as an “object” in Python.</p>
-<p>First, the syntax for a class in Python is relatively simple:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
-    <span class="k">pass</span> <span class="c1"># the implementation of that class.</span>
-</pre></div>
-</div>
-<p>Each class will need to have an <code class="docutils literal notranslate"><span class="pre">__init(self,</span> <span class="pre">...)__</span></code> method.  This is call the “constructor” or “initializer”.  It is necessary to create and instance of the class.  Our implementation looks like:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># the implementation of constructor</span>
-        <span class="k">pass</span>
-</pre></div>
-</div>
-<p>We would want to store the temperature, and there are many ways to do this, but we will continue our introduction to objects in the notebook here:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="nb/w02_temp_demo.html"><span class="doc std std-doc">concrete implementation of <code class="docutils literal notranslate"><span class="pre">temperature</span></code> class</span></a></p></li>
-</ul>
-<p>Object-oriented programming is powerful and you may not initially find it useful or intuitive.  But as you write more code, it will become a standard tool with how you approach your code.  Give it a try, and at the very least, remember it is just another tool to help you be effective.</p>
-</section>
-</section>
-<section id="developing-strategies-for-python-based-jupyter-notebooks">
-<h2>Developing strategies for Python-based Jupyter notebooks<a class="headerlink" href="#developing-strategies-for-python-based-jupyter-notebooks" title="Permalink to this headline">#</a></h2>
-<p>You may already know that Jupyter notebooks can be developed in a number of languages, Python being perhaps the most dominant and popular among them.  You will also soon be overwhelmed with either a large number of notebooks, or notebooks of high complexity, or both.</p>
-<p>We will try to distill some strategies and best practices for your notebooks.  Here are some top considerations:</p>
-<ul>
-<li><p><strong>Be narrative.</strong></p>
-<p>Jupyter notebooks offer you the unique
-opportunity to mix in the <em>conversation</em>
-with yourself and your audience on the
-important things you’re doing.  Don’t miss
-out on this opportunity to tell the story
-and be narrative.  Minimally, your
-<em>future self will thank you</em>, but probably
-so will your advisor, labbies, co-workers
-and maybe even a distant cousin in Kenya,
-India or Greece.</p>
-</li>
-<li><p><strong>Keep notebooks cohesive and focused; break them up when they get too complex.</strong></p>
-<ul class="simple">
-<li><p>large notebooks may be more useful if they are broken up, so consider doing that and linking them.  <a class="reference internal" href="nb/w02_linked_example_nb1.html"><span class="doc std std-doc">See this linked notebook  example</span></a> to get
-and idea about how this is done.</p></li>
-<li><p>another advantage of doing this is if you
-use <a class="reference external" href="https://git-scm.org">git</a> to version control your notebooks,
-you can keep better track of what is going
-on as you move through your code (and it supports collaboration)</p></li>
-</ul>
-</li>
-<li><p><strong>Give attribution to borrowed code, data and ideas.</strong></p>
-<ul class="simple">
-<li><p>if you find useful code, <em>no matter the source</em> – whether Github, stackoverflow, Reddit, a random websitem etc. – give thanks. It doesn’t need to be complex – a simple comment in your code like:</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># thank YOU miquel for the amazing f-string hints @ https://miguendes.me/73-examples-to-help-you-master-pythons-f-strings</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">myvar</span><span class="si">:</span><span class="s2">05</span><span class="si">}</span><span class="s2">)</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>we are all here to help each other, and giving
-a nod to those who put together something
-that got you over the hump isn’t too much to ask. Futhermore, one day something <em>you</em> did might be useful to someone else and they might return the attribution favor!</p></li>
-</ul>
-</li>
-<li><p><strong>Structure your files and folders appropriately.</strong></p>
-<ul class="simple">
-<li><p>for starters, if you have data, create a <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder so you can always know where all your data is</p></li>
-<li><p>if you have a complex notebook set, consider creating folders for the <em>themes</em> or
-notebook <em>functions</em>, so for example:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">preprocessing</span><span class="o">/</span>  <span class="o">&lt;--</span> <span class="n">preprocessing</span> <span class="n">notebooks</span>
-    <span class="n">analysis</span><span class="o">/</span>       <span class="o">&lt;--</span> <span class="n">analysis</span> <span class="n">notebooks</span>
-    <span class="n">data</span><span class="o">/</span>           <span class="o">&lt;--</span> <span class="n">project</span> <span class="ow">in</span><span class="o">/</span><span class="n">outputs</span>
-    <span class="n">summary</span><span class="o">.</span><span class="n">ipynb</span>   <span class="o">&lt;--</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">project</span>
-</pre></div>
-</div>
-</li>
-</ul>
 </section>
 </section>
 
@@ -530,17 +418,17 @@ notebook <em>functions</em>, so for example:</p></li>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="week01.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="week01a.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Week 1</p>
+            <p class="prev-next-title">Scientific Computing, Computational Workflows and Jupyter/Python</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="tools.html" title="next page">
+    <a class='right-next' id="next-link" href="week01c.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tools, Guides and Inspiration</p>
+        <p class="prev-next-title">Jupyter Fundamentals</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

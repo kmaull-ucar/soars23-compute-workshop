@@ -111,12 +111,34 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week01.html">
-   Week 1
+  <a class="reference internal" href="../week01a.html">
+   (*) Scientific Computing Today
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01b.html">
+   Python Fundamentals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01c.html">
+   Jupyter Fundamentals
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tools &amp; Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tools.html">
    Tools, Guides and Inspiration
@@ -297,10 +319,27 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#types">
    Types
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#numbers">
+     Numbers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strings">
+     Strings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lists">
+     Lists
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#loops">
-   Loops
+  <a class="reference internal nav-link" href="#more-resources">
+   More resources:
   </a>
  </li>
 </ul>
@@ -331,10 +370,27 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#types">
    Types
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#numbers">
+     Numbers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strings">
+     Strings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lists">
+     Lists
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#loops">
-   Loops
+  <a class="reference internal nav-link" href="#more-resources">
+   More resources:
   </a>
  </li>
 </ul>
@@ -349,18 +405,299 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="basic-python-language">
 <h1>Basic Python Language<a class="headerlink" href="#basic-python-language" title="Permalink to this headline">#</a></h1>
+<p>Python is an easy language to learn and its syntax is designed to
+be learned very quickly and to provide little friction to
+getting directly to the core task of writing programs.</p>
 <section id="variables-names">
 <h2>Variables (names)<a class="headerlink" href="#variables-names" title="Permalink to this headline">#</a></h2>
+<p>Variables in Python work as we expect, if you’ve ever
+used another language.  Let’s see some examples:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># set the name a to the value 1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">address</span> <span class="o">=</span> <span class="s2">&quot;3020 circle dr.&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="c1"># set b to the name a which has the value 1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<p>Later when we talk about functions, we’ll revisit these concepts.</p>
 </section>
 <section id="types">
 <h2>Types<a class="headerlink" href="#types" title="Permalink to this headline">#</a></h2>
-<p>While Python is considered a “typed” language, it is also what we call “dynamically typed”.  These fancy terms should scare you, instead, what you need to know is that a number is a “type”, a string (like “Hello”) is a “type”, but that in the course of a program some of these can be converted from one type to another.</p>
-<p>If you are not a computer science student the most important thing to know is that there are different “types”, and that when you run your program Python can understand the “types” you are using, but often not before.  This can be the case</p>
-<p>Here is an example of this idea:</p>
+<p>While Python is considered a “typed” language, it is also what we call “dynamically typed”.</p>
+<p>These fancy terms should scare you, instead, what you need to know is that a “type” is a “thing” with a specific expected set of behaviors or properties.</p>
+<p>“Types” are recognizable everywhere:</p>
+<ul class="simple">
+<li><p>a number is a type</p></li>
+<li><p>a letter is a type</p></li>
+<li><p>a word is a type composed of letters</p></li>
+</ul>
+<p>Now we can move these ideas directly into Python (and add some more things to it).</p>
+<p>Think about a “type” on Python as a “thing” that holds data of some sort.  Data could be:</p>
+<ul class="simple">
+<li><p>numbers</p></li>
+<li><p>strings (sequence of characters)</p></li>
+<li><p>lists</p></li>
+</ul>
+<p>Let’s dig in:</p>
+<section id="numbers">
+<h3>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">#</a></h3>
+<p>The basic Python numbers can be integers and floats:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># integer</span>
+<span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="mf">2.4</span> <span class="c1"># float</span>
+<span class="n">b</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.4
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>  <span class="c1"># float + int</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.4
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="loops">
-<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h2>
-<p>Fundamental to nearly any algorithm is the concept of looping or repeated execution of some code until some stopping condition or important event (even and error is important) occurs.  Python makes looping very accessible and intuitive with the <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">...</span> <span class="pre">in:</span></code> construct.  Consider the code below where we loop through a single list of numbers:</p>
+<section id="strings">
+<h3>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">#</a></h3>
+<p>String are sequences of characters … like your name, or your address or just about anything else that can be expressed as characters:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;harold&quot;</span>
+<span class="n">s1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;harold&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s2</span> <span class="o">=</span> <span class="s2">&quot;know this is a longer string&quot;</span>
+<span class="n">s2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;know this is a longer string&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">s2</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;harold, know this is a longer string&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="lists">
+<h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h3>
+<p>Lists are the final type we’ll dig into directly – we leave it as
+an exercise to learn about <span class="xref myst">tuples</span>, <span class="xref myst">dictionaries</span> and <span class="xref myst">sets</span>.</p>
+<p>As you think about strings, linger for a moment on the phrase used
+to describe them: “a sequence of characters”.</p>
+<p>What this is conveying is that a string, while we <em>see</em> it as a whole
+string but it is really just a sequence of characters.</p>
+<p>How might we hold that “sequence”?</p>
+<p>Lists are a natural data structure for the job, and as we will see in Python,
+a list can be a powerful data structure for many, many things in our
+programs.</p>
+<p>Let’s see:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="c1"># is a character or a string with one character</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;a&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;ab&#39;</span> <span class="c1"># is a string with two characters</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ab&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="c1"># is a list of characters</span>
+<span class="n">l1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># is the first element in the 0-based index list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;a&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># is the second element in the 0-based index list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;b&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">l1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># concating the two characters into a string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ab&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>What else can we put in a list?</p>
+<ul class="simple">
+<li><p>numbers</p></li>
+<li><p>and just about anything else, including other lists and mixed types of things</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="c1"># a list of numbers</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4, 5]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="c1"># a list of character strings</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="c1"># a list of characters AND strings</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, 1, &#39;b&#39;, 2, &#39;c&#39;, 3]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">]]]</span> <span class="c1"># a list of characters, strings AND lists</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, 1, [&#39;b&#39;, 2, [&#39;c&#39;, &#39;3&#39;]]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>… and so on.  You can see lists are powerful tools.</p>
+</section>
+</section>
+<section id="more-resources">
+<h2>More resources:<a class="headerlink" href="#more-resources" title="Permalink to this headline">#</a></h2>
+<p>You can get some more practice with these concepts:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/tutorial/introduction.html">Python Introduction</a> on <a class="reference external" href="https://python.org">python.org</a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html">Python Data Structures</a> on <a class="reference external" href="https://python.org">python.org</a></p></li>
+</ul>
 </section>
 </section>
 

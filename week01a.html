@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Week 1 &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
+    <title>Scientific Computing, Computational Workflows and Jupyter/Python &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Week 2" href="week02.html" />
+    <link rel="next" title="Python Fundamentals" href="week01b.html" />
     <link rel="prev" title="Welcome to SOARS 2023 Computational Thinking Workshop" href="welcome.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -113,17 +113,34 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Week 1
+   (*) Scientific Computing Today
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="week02.html">
-   Week 2
+  <a class="reference internal" href="week01b.html">
+   Python Fundamentals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week01c.html">
+   Jupyter Fundamentals
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tools &amp; Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="tools.html">
    Tools, Guides and Inspiration
@@ -207,7 +224,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/week01.md"
+        <a href="_sources/week01a.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -266,69 +283,64 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Week 1
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scientific-computing-today">
    Scientific Computing Today
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#software-support-tools">
    Software Support Tools
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#jupyter">
      Jupyter
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#structure-of-notebooks-and-narratives">
        Structure of Notebooks and Narratives
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#computational-narratives">
        Computational Narratives
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#narrative-structure-flow">
        Narrative Structure &amp; Flow
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#computational-flow">
        Computational Flow
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#cross-notebook-linking-table-of-contents-and-flow">
        Cross-notebook Linking, Table of Contents and Flow
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#citation">
        Citation
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#git-and-github">
      git and Github
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#git">
        git
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#github">
        Github
       </a>
@@ -346,7 +358,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Week 1</h1>
+                <h1>Scientific Computing, Computational Workflows and Jupyter/Python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -356,69 +368,64 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Week 1
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scientific-computing-today">
    Scientific Computing Today
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#software-support-tools">
    Software Support Tools
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#jupyter">
      Jupyter
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#structure-of-notebooks-and-narratives">
        Structure of Notebooks and Narratives
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#computational-narratives">
        Computational Narratives
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#narrative-structure-flow">
        Narrative Structure &amp; Flow
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#computational-flow">
        Computational Flow
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#cross-notebook-linking-table-of-contents-and-flow">
        Cross-notebook Linking, Table of Contents and Flow
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#citation">
        Citation
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#git-and-github">
      git and Github
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#git">
        git
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#github">
        Github
       </a>
@@ -437,11 +444,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="week-1">
-<h1>Week 1<a class="headerlink" href="#week-1" title="Permalink to this headline">#</a></h1>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="scientific-computing-computational-workflows-and-jupyter-python">
+<h1>Scientific Computing, Computational Workflows and Jupyter/Python<a class="headerlink" href="#scientific-computing-computational-workflows-and-jupyter-python" title="Permalink to this headline">#</a></h1>
 <section id="scientific-computing-today">
-<h1>Scientific Computing Today<a class="headerlink" href="#scientific-computing-today" title="Permalink to this headline">#</a></h1>
+<h2>Scientific Computing Today<a class="headerlink" href="#scientific-computing-today" title="Permalink to this headline">#</a></h2>
 <p>With the rise of advanced, ubiquitous and inexpensive computing, nearly every scientific  discipline today has (with a mix of excitement and/or hesitation) embraced computing  – and in fact, <em>some</em> computing skill is a practical <em>requirement</em> to do almost any domain-specific work, no matter your discipline (even including the humanities).</p>
 <p>It is daunting to gain skill in the tools and technologies that are driving scientific advancement, and the process takes time and requires continuous learning, since the dominant tools today may not be the same two, five or ten years into the future.</p>
 <p>There are several axes that support the scientific computing skill today:</p>
@@ -467,9 +473,9 @@ title="Print to PDF"
 </div>
 </section>
 <section id="software-support-tools">
-<h1>Software Support Tools<a class="headerlink" href="#software-support-tools" title="Permalink to this headline">#</a></h1>
+<h2>Software Support Tools<a class="headerlink" href="#software-support-tools" title="Permalink to this headline">#</a></h2>
 <section id="jupyter">
-<h2>Jupyter<a class="headerlink" href="#jupyter" title="Permalink to this headline">#</a></h2>
+<h3>Jupyter<a class="headerlink" href="#jupyter" title="Permalink to this headline">#</a></h3>
 <p>As you may know, Jupyter is a simple, interactive platform for writing Python code.  To be certain, the Jupyter environment supports multiple languages, including <a class="reference external" href="https://www.r-project.org/">R</a>, <a class="reference external" href="https://julialang.org/">Julia</a> and Java to name a few.  In fact, the name (and spelling) for the work comes from (Ju)lia, (Pyt)hon and (R).</p>
 <p>The appeal of the Jupyter environment is simple:</p>
 <ul class="simple">
@@ -481,7 +487,7 @@ title="Print to PDF"
 <p>Jupyter notebooks can be created in the <a class="reference external" href="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html">standard notebook environment</a> or the newer, expanded feature <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html">Jupyter Lab</a> environment.  Which ever you choose, there are a few basics about the platform that you’ll want to learn and this video may be valuable to introduce you to some of the features of Jupyter Lab.</p>
 <iframe  title="YouTube video player" width="640" height="480"  src="https://www.youtube.com/embed/A5YyoCKxEOU" frameborder="0" allowfullscreen></iframe>
 <section id="structure-of-notebooks-and-narratives">
-<h3>Structure of Notebooks and Narratives<a class="headerlink" href="#structure-of-notebooks-and-narratives" title="Permalink to this headline">#</a></h3>
+<h4>Structure of Notebooks and Narratives<a class="headerlink" href="#structure-of-notebooks-and-narratives" title="Permalink to this headline">#</a></h4>
 <p>Notebooks impart a great deal of flexibility to the creator, and with that flexibility comes some basic responsibilities.  Though not every notebook is meant to be shared, you should assume that the majority of your notebooks <em>will</em> be shared or executed by at least one other person – even if you take the approach that the one other person is your <em>future self five years from now that might have completely forgotten what you were working on at the time the notebook was created</em>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -494,7 +500,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="computational-narratives">
-<h3>Computational Narratives<a class="headerlink" href="#computational-narratives" title="Permalink to this headline">#</a></h3>
+<h4>Computational Narratives<a class="headerlink" href="#computational-narratives" title="Permalink to this headline">#</a></h4>
 <p>The Jupyter environment is designed to support what are called <em>computational narratives</em>
 we’ll talk about what they are and then we’re going to create one ourselves. there’s really nothing special about it – in fact we can initially approach it as a fancy way to indicate a “notebook” that pays special attention to a developing good flow through the core research, implementation (computation) and narrative explanation of that research.  In the end, narratives support the researcher, the audience and the research itself.</p>
 <p>That is to say, and as mentioned previously, the narrative is for you but not <em>only for you</em> – it’s also intended for the audience who will be interested in your work and possibly reproducing it.  Many times we create notebooks are that do not expose details  about what trying to accomplish in the notebook – indeed, many times we develop a single notebook with a large amount of code to produce a graphic of visualization, and months later when we return to it, we are unsure exactly what the intent of the code was, or worse, when we try to modify the code that was there (say, to update the data or improve it) we end up unnecessarily repeating previous work.  With a narrative in place we can position our work to be more intentional and thus enhance its utility and value in the future.</p>
@@ -505,7 +511,7 @@ we’ll talk about what they are and then we’re going to create one ourselves.
 <p>A good narrative has one objective: to describe the process and workflow of your research so that you and others understand what was done, and ostensibly how to reproduce it, not only through the original notebook, but through any other means (copying, borrowing, etc.). The computational narrative truly emerges as a virtuous relationship between code, computation and the expository narrative and is more than just a description of what was done (though that is a great place to start in the absence of anything else), but rather a detailed account of the purpose of the notebook and the underlying work, the decisions that were made at various points in the notebook and <em>why</em> they were made. doing this not only provides the context necessary for others to understand what was done, how and why, but it is also an important reminder to yourself of these things, since as time moves forward, notebooks accumulate and it is easy to forget all of these details.</p>
 </section>
 <section id="narrative-structure-flow">
-<h3>Narrative Structure &amp; Flow<a class="headerlink" href="#narrative-structure-flow" title="Permalink to this headline">#</a></h3>
+<h4>Narrative Structure &amp; Flow<a class="headerlink" href="#narrative-structure-flow" title="Permalink to this headline">#</a></h4>
 <p>Often we are faced with developing a notebook with only minimal information about the end goal.  We want to write some code, produce some output (in the form of graphs, tables, etc) and then we might want to share that with others.  The notebook provides an opportunity to layer our work in a way that a commitment to one notebook is not necessary.  Indeed, our first notebooks are often scratch notebooks (but many times we don’t actually see them that way and they end up as the final notebook).  We would like to avoid the problem of scratch notebooks turning into final notebooks and so planning your narrative structure (once you get going in a direction) is important.</p>
 <p>A single notebook should be designed to guide the narrative through a problem, computational resolution (or attempt at resolution) and summary of outcome(s).  This will include:</p>
 <ol class="simple">
@@ -522,7 +528,7 @@ we’ll talk about what they are and then we’re going to create one ourselves.
 <p>You may eventually come to the conclusion that a single large notebook is confusing and diminishes the value of your work.  You may find some parts of your narrative are algorithmically intensive and need addition exposition or more complete mathematical treatment.  Some of that explanation may be in the form of code cells, and it may be appropriate to develop multiple notebooks to manage the complexity of your work.  Recognizing this early can be an important step toward good narratives.</p>
 </section>
 <section id="computational-flow">
-<h3>Computational Flow<a class="headerlink" href="#computational-flow" title="Permalink to this headline">#</a></h3>
+<h4>Computational Flow<a class="headerlink" href="#computational-flow" title="Permalink to this headline">#</a></h4>
 <p>The computational flow of your notebook refers to the <em>code cells</em> of your notebook.  This might also include the output of those cells, including graphics, plots and visualizations, as well as text output (e.g. the result of a calculation).  There are simple steps to keep your code as tidy as possible so that it is not only reusable, but that cells can be rerun easily with their appropriate contexts and imports.</p>
 <p>Consider:</p>
 <ol>
@@ -552,7 +558,7 @@ we’ll talk about what they are and then we’re going to create one ourselves.
 <p>so what’s in a narrative you have images of visuals usually those the output cells you know if you ran a patters or you ran a plot or you read a book whatever out lot of times you’ll have your formulas exploration of algorithms you have links to other notebooks other data other modules and those are the no books could be a collection of notebooks that you is up our part of your broader narrative</p>
 </section>
 <section id="cross-notebook-linking-table-of-contents-and-flow">
-<h3>Cross-notebook Linking, Table of Contents and Flow<a class="headerlink" href="#cross-notebook-linking-table-of-contents-and-flow" title="Permalink to this headline">#</a></h3>
+<h4>Cross-notebook Linking, Table of Contents and Flow<a class="headerlink" href="#cross-notebook-linking-table-of-contents-and-flow" title="Permalink to this headline">#</a></h4>
 <p>One of the most profoundly useful and perhaps underused features of the notebook ecosystem, is notebook linking.  By this we mean developing notebooks that link to other notebooks that represent a larger collection.  For example, when a single notebook it large and complex, it may be necessary to consider breaking it up into other notebooks.  Unifying one more more notebooks is then a simple matter of linking them.</p>
 <p>For example, a markdown cell in a notebook linking to another would look like this:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>So at once, we have shown the first part of the analysis.  
@@ -568,7 +574,7 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
 <p>Should you choose to develop a single linear notebook, a table of contents can be a good idea.  You can manually create your TOC or try one of several methods for automatically creating it.  Either way, your notebooks will increase their utility by doing this.</p>
 </section>
 <section id="citation">
-<h3>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">#</a></h3>
+<h4>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">#</a></h4>
 <p>Citation, acknowledgement and attribution are the cornerstone of collaboration and are at the heart of scientific communication.  A notebook may have citations to many things: academic papers, datasets, software, external resources, computing resources, licenses, etc.  It should be a reminder to you that attribution is an important thing to your own notebook as well. When you share your notebook with others, or submit is as a supplement to a published paper or presentation, it may be worth considering getting a permanent identifier such as a DOI (Digital Object Identifier) and providing appropriate attribution instructions in your own notebook, especially if they are in Github or some other public repository.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -577,10 +583,10 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
 </section>
 </section>
 <section id="git-and-github">
-<h2>git and Github<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h2>
+<h3>git and Github<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h3>
 <p>Though notebooks do not require it, the use of git and Github are highly valuable tools in your scientific workflow.  But before using either, it should be clear what each of these tools are and what they bring to the table for your work.</p>
 <section id="git">
-<h3>git<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h3>
+<h4>git<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h4>
 <p><span class="xref myst">git</span> in its simplest form, is a tool that allows you to keep track of changes to files.  Build atop the heritage of software revision control systems, which function to make sure source code changes can be tracked, and in the collaborative case, merged or otherwise monitored by a team of people (developers, etc.).  git is its own tool and should not be confounded with <em>Github</em>, which can be seen as a collaborative front end to tools like git.  You can use git without Github, and while <em>technically</em> you can use Github without git, intermediate and advanced use require it.</p>
 <p>There are really three aspects of git that you should be familiar with:</p>
 <ul class="simple">
@@ -591,13 +597,19 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
 <p>Repository initialization is a simple process of making a set of files <em>visible</em> to git, so they can be tracked.  You must initialize repository before you can put any file under git’s control.  After you have initialized a repository, you may add files, edit them and begin to let git know what changes you made to those files so that in the future, you can keep track of those changes – especially if they are dramatic or represent big changes from one point in time to another.  Once your changes have been made, you must commit them to the repository and then the magic begins.  Git will be able to automatically show the differences in files, so that in the future, you have a trackable <em>history</em> of those changes.</p>
 <p>Git is mostly a command line tool, though there are several front end tools that make it less unfriendly:</p>
 <ul class="simple">
-<li></li>
-<li></li>
-<li></li>
+<li><p><a class="reference external" href="https://desktop.github.com/">Github Desktop</a> client for Mac, Windows and Linux</p></li>
+<li><p><a class="reference external" href="https://tortoisegit.org/download/">TortoiseGit</a> client for Windows</p></li>
+<li><p><a class="reference external" href="https://gitup.co/">Gitup</a> client for Mac</p></li>
+</ul>
+<p>For a quick sheet approach to some basic git command line instructions, see</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">Git Cheat Sheet</a> (PDF by Github)</p></li>
+<li><p><a class="reference external" href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a> (PDF by Github Education)</p></li>
+<li><p><a class="reference external" href="https://www.freecodecamp.org/news/git-cheat-sheet/">Git Cheat Sheet: 50 commands you should know</a> (by Fabio Pacific&#64;FreeCodeCamp)</p></li>
 </ul>
 </section>
 <section id="github">
-<h3>Github<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h3>
+<h4>Github<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h4>
 <p><img alt="" src="github_com.png" /></p>
 <p>But one of the most friendly (and popular) front ends to git is <a class="reference external" href="https://github.com">Github</a>, but two other platforms <a class="reference external" href="https://gitlab.org">Gitlab</a> and <a class="reference external" href="https://bitbucket.org">Bitbucket</a> offer similar and equally good alternatives.  You are free to use whatever platforms make the most sense for you, your team and your project, though we will focus on Github here.</p>
 <p>Github is a website that provides front end access to git repositories, but more importantly, it provides an excellent platform for collaboration.  You can share code with other individuals, teams, researchers, etc.  You can privately or publicly share, and there are many additional functionalities to support your code and your team, many of which you may never find use for, or know even exist.</p>
@@ -607,6 +619,7 @@ so if you have a particular license on your notebooks or your code that needs to
 
 we should so that you can get of remember know what's going on okay so here's what we're gonna do it and and we may run out of time but oh what we could probably at least get started and see how far would go i'll give you like maybe ten minutes to jump in and i'll actually do this we live as well so you know if you just want to follow long that's fine if you want to do your own thing that's right so oregon just gonna explore average temperature an immunity for city minneapolis minneapolis from january first to january figure for she does them jail for twenty two it i've already grabbed his data and so it is in it is that data file that is in the repository or that you just downloaded awfully while that long we're going to use when he's panders to get the mean media min and max temperature for the time period and going to build a quick little narrative cape so ah let let me let let me ask the question i'm a of how we want to proceed we've got like thirteen minutes i can do this narrative real fast and out just talk through it i'm or i can let you all do this right now and then say how far you get ten minutes type of thing and we can chat about that or or you can do it off line and play with it says now you have access to the hope he can actually do this ah i'm in i'm open to a or oh okay did none of those lights go through the next to slides and that we can call it the in our are there any particular vote on any one of those or and configuration that i didn't mention revamp preference i mean it's want me to yeah i could certainly do it and then once you get the slides you can go back through or you can do you want in any preference on analysts or are good l a said i and i could go i could just leave it i'm to go on okay so salami lot okay so i'm going to jump in and out or do it you rather quickly here but on let's go back to the what are we trying to accomplish our right so what i'm going to do is i'm going to create a new notebook and let's go ahead and let's go and do this we're going to do a window we're going to go to the jupiter lab to sure that are it so on creating a notebook in that know book real fast i'm going to remind myself what i'm gonna do so to to remind myself you can create a marked down so by hitting the escape am and have you covered a back to ac was changing from code that lead me up let me see where's this file libby  okay i'm you can convert from marked down so lives from marked down so by hitting escape him as marco and a good quarterback to a code so by hitting escape why or we can hit the drop down and choose what you what we're going to use a markdown down so and i'm gonna go back of my son lied and i'm going to copy what i'm what i'm trying to accomplish your as mark on i'm a copy those in there and then ah the see okay so on it it actually a it's a weird stuff here though want to do that and it so if you hit shift enter as everyone remembers it'll cover that marked down to something that sector readable so i'm i'll go and here and i'll add a heading our put a a heading it overview of greatest of it give it some meteor okay virago and i notice that you know we have a nice features that are now available to us okay so my overview as i'm gonna grab a csv forget which we've already done right so at this point out what i'm gonna do is just use demo three and then uses data file gay and then when i use the pandas library to get the mean median min max the temperature with that period so forcing i'll do that import pandas as pt most people are familiar with this if you have never use pandas are there are some arm i will put the in the chat i can go and put the pandas documentation of here i'm and is is amazing and has you know lots of features so your would just leave it at that right so on and now either the question is how do i grabbed his file so i'm gonna say by data frame equals know pandas how much are you two ways to be this actually have got read csv is a csv file a i'm i'm going to read it see as we've from the file system so we're gonna do this we're going to be demo three doors and that i'm getting tab to to get at all this a i'm getting cab so ah juvenile record as is trying to open a file and it'll just sort of start inspected the file system and make it easy for you to do so i'm groups or it that pt or it so so i made a mistake and of that's good he told me you know pandas as exist bpd does obviously so i did that so now have a data frame and of do the f it would just part that been for him to the screen and let me throw off some of these distractions here for a moment ah do we need term outvoted or okay so want to do that so now what is do it it it it pulled then that that csv file and in fact i will open another terminal just a just to show you ah what that csv looks like right this is the csv the pandas as now important and if we look on the file system can see ah it's a four point one megabyte file aren't okay now i'm what am i being asked to do i want to get the mean median min max of temperature are so i'm just from the audience it who has used it it just raise your hand who has used pandas before ayman a know and he said you you had a alyssa okay right okay cool now on how and why how do i just get the ah t average column or i i do that pandas i'm on a d d f what the f that t average call him or away or women amy 
 -->
+</section>
 </section>
 </section>
 </section>
@@ -645,10 +658,10 @@ we should so that you can get of remember know what's going on okay so here's wh
             <p class="prev-next-title">Welcome to SOARS 2023 Computational Thinking Workshop</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="week02.html" title="next page">
+    <a class='right-next' id="next-link" href="week01b.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Week 2</p>
+        <p class="prev-next-title">Python Fundamentals</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

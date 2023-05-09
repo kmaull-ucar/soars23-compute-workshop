@@ -1,5 +1,5 @@
-Week 1
-------  
+Scientific Computing, Computational Workflows and Jupyter/Python
+======  
 
 ````{dropdown}  OBJECTIVES
 :container: + shadow
@@ -177,9 +177,15 @@ Repository initialization is a simple process of making a set of files _visible_
 
 Git is mostly a command line tool, though there are several front end tools that make it less unfriendly:
 
-* 
-* 
-* 
+* [Github Desktop](https://desktop.github.com/) client for Mac, Windows and Linux
+* [TortoiseGit](https://tortoisegit.org/download/) client for Windows
+* [Gitup](https://gitup.co/) client for Mac
+
+For a quick sheet approach to some basic git command line instructions, see
+
+* [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf) (PDF by Github)
+* [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) (PDF by Github Education)
+* [Git Cheat Sheet: 50 commands you should know](https://www.freecodecamp.org/news/git-cheat-sheet/) (by Fabio Pacific@FreeCodeCamp)
 
 #### Github
 
