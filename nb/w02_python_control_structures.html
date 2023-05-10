@@ -755,6 +755,58 @@ data idiom that lends itself (not by accident) to <code class="docutils literal 
 <h3><code class="docutils literal notranslate"><span class="pre">match</span></code> (Python 3.10+)<a class="headerlink" href="#match-python-3-10" title="Permalink to this headline">#</a></h3>
 <p>In Python 3.10 the <code class="docutils literal notranslate"><span class="pre">match</span></code> construct was added to bring a common idiom to the language similar
 to the <code class="docutils literal notranslate"><span class="pre">case</span></code> statement found in languages like Java.</p>
+<p>Learn more about it <a class="reference external" href="https://docs.python.org/3/tutorial/controlflow.html#match-statements">here</a>.</p>
+<p>You may be careful to use this since it is relatively new and will require a newer version of Python to execute.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_ten_or_eleven</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">match</span> <span class="n">value</span><span class="p">:</span>
+        <span class="k">case</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number is 10&quot;</span><span class="p">)</span>
+        <span class="k">case</span> <span class="mi">11</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number is 11&quot;</span><span class="p">)</span>
+        <span class="k">case</span> <span class="k">_</span><span class="p">:</span> <span class="c1"># the base case</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number is not 10 or 11&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">is_ten_or_eleven</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The number is 10
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">is_ten_or_eleven</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The number is 11
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">is_ten_or_eleven</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The number is not 10 or 11
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -768,16 +820,16 @@ to the <code class="docutils literal notranslate"><span class="pre">case</span><
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "current"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "current",
             path: "./nb"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'current'</script>
 
               </div>
               

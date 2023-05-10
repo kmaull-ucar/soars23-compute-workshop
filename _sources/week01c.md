@@ -14,6 +14,15 @@ Jupyter Fundamentals
 
 ````
 
+## Jupyter: The Quick Tour
+
+The notebooks below will give you a quick tour of the key features of the language:
+
+| Notebook | Concepts | Link |
+|:--:|:---|:--:|
+| 1 | Basic Jupyter introduction | [nb/w01_jupyter_basics.ipynb](nb/w01_jupyter_basics.ipynb) |
+| 2 | Interactive Jupyter | [nb/w01_interactive_jupyter.ipynb](nb/w01_interactive_jupyter.ipynb) |
+
 
 ## Strategies for Python-based Jupyter notebooks
 
