@@ -1,18 +1,18 @@
 Python Fundamentals 
 =====  
 
-````{dropdown}  OBJECTIVES
-:container: + shadow
-:title: bg-secondary text-white text-center font-weight-bold
-:body: bg-light font-italic
-:animate: fade-in
-:open:
+```{card}  
+:class-card: objectives 
+:class-header: text-center font-weight-bold
+:class-body: bg-light font-italic 
 
+**OBJECTIVES**
+^^^
 
 * Python quick tour
 * Anaconda and Python
 * Object-oriented programming in Python
-````
+```
 
 Python is a general purpose programming language.  As such, it is possible to write nearly any kind of program in it, sans some low-level hardware-based code (though their are workarounds to integrate lower-level languages like C into Python).
 

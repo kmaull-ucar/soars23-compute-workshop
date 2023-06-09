@@ -1,0 +1,1452 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'nb/w01c_interactive_jupyter';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../welcome.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../welcome.html">
+                    Welcome to SOARS 2023 Computational Thinking Workshop
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week01a.html">(*) Scientific Computing Today</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week01b.html">Python Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week01c.html">Jupyter Fundamentals</a></li>
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week02a.html">Algorithms and Computational Thinking</a></li>
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools &amp; Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools, Guides and Inspiration</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../readings.html">Readings</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/nb/w01c_interactive_jupyter.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&amp;starttime=2021-01-01&amp;endtime=2024-01-01&amp;minmagnitude=7&quot;</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
+<span class="n">map_eq</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">37.733795</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.446747</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">]:</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;place&#39;</span><span class="p">]</span>
+    <span class="n">magnitude</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;mag&#39;</span><span class="p">]</span>
+    <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;coordinates&#39;</span><span class="p">]</span>
+
+    <span class="c1"># place the data on the map!</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">([</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;place:</span><span class="si">{}</span><span class="se">\n</span><span class="s1">magnitude:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">place</span><span class="p">,</span> <span class="n">magnitude</span><span class="p">))</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_eq</span><span class="p">)</span>
+<span class="n">map_eq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_c1234a4d7a2184b254e6b3569974bce8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c1234a4d7a2184b254e6b3569974bce8&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_c1234a4d7a2184b254e6b3569974bce8 = L.map(
+                &quot;map_c1234a4d7a2184b254e6b3569974bce8&quot;,
+                {
+                    center: [37.733795, -122.446747],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c761ce67c88169a406c98e53c5e612f0 = L.tileLayer(
+                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+            var marker_f1e8b3c989af2a1de0fc1c63ac7c2f94 = L.marker(
+                [-23.0622, 170.4562],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_65a3aa31eef807d005e8240b0f9c9aee = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_872bca98431b8e4d7c3b4b93f98206ed = $(`&lt;div id=&quot;html_872bca98431b8e4d7c3b4b93f98206ed&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:southeast of the Loyalty Islands magnitude:7.1&lt;/div&gt;`)[0];
+                popup_65a3aa31eef807d005e8240b0f9c9aee.setContent(html_872bca98431b8e4d7c3b4b93f98206ed);
+            
+        
+
+        marker_f1e8b3c989af2a1de0fc1c63ac7c2f94.bindPopup(popup_65a3aa31eef807d005e8240b0f9c9aee)
+        ;
+
+        
+    
+    
+            var marker_128231a9f5eeccd5e6cdb8e47f86e9eb = L.marker(
+                [-23.1852, 170.7633],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_fdd982577b34ce2f618157e3e2609554 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_116cc3e55a8dceb4e528d3168aea4540 = $(`&lt;div id=&quot;html_116cc3e55a8dceb4e528d3168aea4540&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:southeast of the Loyalty Islands magnitude:7.7&lt;/div&gt;`)[0];
+                popup_fdd982577b34ce2f618157e3e2609554.setContent(html_116cc3e55a8dceb4e528d3168aea4540);
+            
+        
+
+        marker_128231a9f5eeccd5e6cdb8e47f86e9eb.bindPopup(popup_fdd982577b34ce2f618157e3e2609554)
+        ;
+
+        
+    
+    
+            var marker_c4efbd794e0fdb339dc91a3ceafb5268 = L.marker(
+                [-15.6278, -174.4925],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_575b814be414f9804d0d75a00325e502 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_5062556f10617e07bb5d15e814523b74 = $(`&lt;div id=&quot;html_5062556f10617e07bb5d15e814523b74&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Tonga magnitude:7.6&lt;/div&gt;`)[0];
+                popup_575b814be414f9804d0d75a00325e502.setContent(html_5062556f10617e07bb5d15e814523b74);
+            
+        
+
+        marker_c4efbd794e0fdb339dc91a3ceafb5268.bindPopup(popup_575b814be414f9804d0d75a00325e502)
+        ;
+
+        
+    
+    
+            var marker_bf88857f92476a4ebed734874c898b3e = L.marker(
+                [-0.8082, 98.5112],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_dcc6a71ef360f46a6c31fd15f7ad4520 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ab61ceed219effaeba3f65beb3ebbbbc = $(`&lt;div id=&quot;html_ab61ceed219effaeba3f65beb3ebbbbc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:171 km SSE of Teluk Dalam, Indonesia magnitude:7.1&lt;/div&gt;`)[0];
+                popup_dcc6a71ef360f46a6c31fd15f7ad4520.setContent(html_ab61ceed219effaeba3f65beb3ebbbbc);
+            
+        
+
+        marker_bf88857f92476a4ebed734874c898b3e.bindPopup(popup_dcc6a71ef360f46a6c31fd15f7ad4520)
+        ;
+
+        
+    
+    
+            var marker_ae4786a456755f23eddaf29d475afd29 = L.marker(
+                [-29.9918, -177.8114],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_e5552fa482669ab006315d17a2493310 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ee8fae978481d59007b99991fd4e1ead = $(`&lt;div id=&quot;html_ee8fae978481d59007b99991fd4e1ead&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Kermadec Islands, New Zealand magnitude:7.1&lt;/div&gt;`)[0];
+                popup_e5552fa482669ab006315d17a2493310.setContent(html_ee8fae978481d59007b99991fd4e1ead);
+            
+        
+
+        marker_ae4786a456755f23eddaf29d475afd29.bindPopup(popup_e5552fa482669ab006315d17a2493310)
+        ;
+
+        
+    
+    
+            var marker_eab0d79760d5a1f54c35c898ec65d025 = L.marker(
+                [-6.0413, 112.0478],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_335a22a3747e391d4d7f78c33ea63c59 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_f9268a7d1d2e5aa481804fda3a148e3d = $(`&lt;div id=&quot;html_f9268a7d1d2e5aa481804fda3a148e3d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:94 km N of Tuban, Indonesia magnitude:7&lt;/div&gt;`)[0];
+                popup_335a22a3747e391d4d7f78c33ea63c59.setContent(html_f9268a7d1d2e5aa481804fda3a148e3d);
+            
+        
+
+        marker_eab0d79760d5a1f54c35c898ec65d025.bindPopup(popup_335a22a3747e391d4d7f78c33ea63c59)
+        ;
+
+        
+    
+    
+            var marker_58ebb74f9ab8c49257d21fcfcff2ae67 = L.marker(
+                [-4.3229, 143.1658],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_0ccb5f879bd74cc0feac4884ef410349 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_5b3a1d362755bbe8cf9e312fa9ca40fa = $(`&lt;div id=&quot;html_5b3a1d362755bbe8cf9e312fa9ca40fa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:40 km ESE of Ambunti, Papua New Guinea magnitude:7&lt;/div&gt;`)[0];
+                popup_0ccb5f879bd74cc0feac4884ef410349.setContent(html_5b3a1d362755bbe8cf9e312fa9ca40fa);
+            
+        
+
+        marker_58ebb74f9ab8c49257d21fcfcff2ae67.bindPopup(popup_0ccb5f879bd74cc0feac4884ef410349)
+        ;
+
+        
+    
+    
+            var marker_d4dd788dcd24902b95e75221bb2261a3 = L.marker(
+                [-30.1741, -176.2047],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_88ebba4d6f01385994ea94481ba85649 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b0d47c61842639181f2d8a75f39b112e = $(`&lt;div id=&quot;html_b0d47c61842639181f2d8a75f39b112e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Kermadec Islands region magnitude:7&lt;/div&gt;`)[0];
+                popup_88ebba4d6f01385994ea94481ba85649.setContent(html_b0d47c61842639181f2d8a75f39b112e);
+            
+        
+
+        marker_d4dd788dcd24902b95e75221bb2261a3.bindPopup(popup_88ebba4d6f01385994ea94481ba85649)
+        ;
+
+        
+    
+    
+            var marker_6fc18da1bd8d7b35dae156e27bcbeb6b = L.marker(
+                [38.0106, 37.1962],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_f3acea0c88d33f6da114e3bf57c75178 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_4daedc37829748a8f730b24c5e2667df = $(`&lt;div id=&quot;html_4daedc37829748a8f730b24c5e2667df&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Elbistan earthquake, Kahramanmaras earthquake sequence magnitude:7.5&lt;/div&gt;`)[0];
+                popup_f3acea0c88d33f6da114e3bf57c75178.setContent(html_4daedc37829748a8f730b24c5e2667df);
+            
+        
+
+        marker_6fc18da1bd8d7b35dae156e27bcbeb6b.bindPopup(popup_f3acea0c88d33f6da114e3bf57c75178)
+        ;
+
+        
+    
+    
+            var marker_cb2e5fec6457d1453d4d9b3bcd4a7c08 = L.marker(
+                [37.2256, 37.0143],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_d3b394107d996478e54d89caad5408d2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_1105aa75daf8aad893f9699a0ca099be = $(`&lt;div id=&quot;html_1105aa75daf8aad893f9699a0ca099be&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Pazarcik earthquake, Kahramanmaras earthquake sequence magnitude:7.8&lt;/div&gt;`)[0];
+                popup_d3b394107d996478e54d89caad5408d2.setContent(html_1105aa75daf8aad893f9699a0ca099be);
+            
+        
+
+        marker_cb2e5fec6457d1453d4d9b3bcd4a7c08.bindPopup(popup_d3b394107d996478e54d89caad5408d2)
+        ;
+
+        
+    
+    
+            var marker_2beb2bd17134d5c3286fe321386257d6 = L.marker(
+                [2.7306, 127.0221],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_ded302c154655d75a3da9d24bdf4340d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b582ca1a51fa78e8f0e7b22461df74ba = $(`&lt;div id=&quot;html_b582ca1a51fa78e8f0e7b22461df74ba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:156 km NW of Tobelo, Indonesia magnitude:7&lt;/div&gt;`)[0];
+                popup_ded302c154655d75a3da9d24bdf4340d.setContent(html_b582ca1a51fa78e8f0e7b22461df74ba);
+            
+        
+
+        marker_2beb2bd17134d5c3286fe321386257d6.bindPopup(popup_ded302c154655d75a3da9d24bdf4340d)
+        ;
+
+        
+    
+    
+            var marker_92a045f3d847bae779773b36a46d282b = L.marker(
+                [-7.0586, 130.009],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_5378b2f548bb6a4f5b63d746103a2ba6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d50e16d3fec8b65c14926028e4ed4389 = $(`&lt;div id=&quot;html_d50e16d3fec8b65c14926028e4ed4389&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Pulau Pulau Tanimbar, Indonesia magnitude:7.6&lt;/div&gt;`)[0];
+                popup_5378b2f548bb6a4f5b63d746103a2ba6.setContent(html_d50e16d3fec8b65c14926028e4ed4389);
+            
+        
+
+        marker_92a045f3d847bae779773b36a46d282b.bindPopup(popup_5378b2f548bb6a4f5b63d746103a2ba6)
+        ;
+
+        
+    
+    
+            var marker_6c3e2d388a602ad0723eb5826e109507 = L.marker(
+                [-14.9467, 166.8791],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_10fb52147af32457c87dce5a5c0e94a7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_82e2cb3393750ca643ede776deb5a43d = $(`&lt;div id=&quot;html_82e2cb3393750ca643ede776deb5a43d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:23 km WNW of Port-Olry, Vanuatu magnitude:7&lt;/div&gt;`)[0];
+                popup_10fb52147af32457c87dce5a5c0e94a7.setContent(html_82e2cb3393750ca643ede776deb5a43d);
+            
+        
+
+        marker_6c3e2d388a602ad0723eb5826e109507.bindPopup(popup_10fb52147af32457c87dce5a5c0e94a7)
+        ;
+
+        
+    
+    
+            var marker_d19f0603a71ab067a76f66fc171af202 = L.marker(
+                [-9.8198, 159.6033],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_396b93835a7f534f0bf9a954661879ae = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_0d747e105d1536ecc7de056c687d8229 = $(`&lt;div id=&quot;html_0d747e105d1536ecc7de056c687d8229&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:18 km SW of Malango, Solomon Islands magnitude:7&lt;/div&gt;`)[0];
+                popup_396b93835a7f534f0bf9a954661879ae.setContent(html_0d747e105d1536ecc7de056c687d8229);
+            
+        
+
+        marker_d19f0603a71ab067a76f66fc171af202.bindPopup(popup_396b93835a7f534f0bf9a954661879ae)
+        ;
+
+        
+    
+    
+            var marker_7ff911012802f036dd9cb9599379f5ef = L.marker(
+                [-20.1112, -178.3453],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_0e11b4f4faf8516880344a012d33c46f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a5de1b6e6dee30986389e144468e7566 = $(`&lt;div id=&quot;html_a5de1b6e6dee30986389e144468e7566&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:None magnitude:7&lt;/div&gt;`)[0];
+                popup_0e11b4f4faf8516880344a012d33c46f.setContent(html_a5de1b6e6dee30986389e144468e7566);
+            
+        
+
+        marker_7ff911012802f036dd9cb9599379f5ef.bindPopup(popup_0e11b4f4faf8516880344a012d33c46f)
+        ;
+
+        
+    
+    
+            var marker_a712ac854f0c51a202409c35c429c759 = L.marker(
+                [-19.2881, -172.1471],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_d317fe88b0894950d21a0eaacd6eb906 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_daf2414bb3b35cf21df5805b0094a784 = $(`&lt;div id=&quot;html_daf2414bb3b35cf21df5805b0094a784&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:205 km ESE of Neiafu, Tonga magnitude:7.3&lt;/div&gt;`)[0];
+                popup_d317fe88b0894950d21a0eaacd6eb906.setContent(html_daf2414bb3b35cf21df5805b0094a784);
+            
+        
+
+        marker_a712ac854f0c51a202409c35c429c759.bindPopup(popup_d317fe88b0894950d21a0eaacd6eb906)
+        ;
+
+        
+    
+    
+            var marker_39ce6f588e991fbb5d1531d7a8cd183b = L.marker(
+                [-26.0901, 178.3427],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_11f1caab8102610827d19a396267c4e0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_70ffa185bee69c1818d96cb27e07df6d = $(`&lt;div id=&quot;html_70ffa185bee69c1818d96cb27e07df6d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:south of the Fiji Islands magnitude:7&lt;/div&gt;`)[0];
+                popup_11f1caab8102610827d19a396267c4e0.setContent(html_70ffa185bee69c1818d96cb27e07df6d);
+            
+        
+
+        marker_39ce6f588e991fbb5d1531d7a8cd183b.bindPopup(popup_11f1caab8102610827d19a396267c4e0)
+        ;
+
+        
+    
+    
+            var marker_136ca3677f9830cc54a6940180763292 = L.marker(
+                [18.4552, -102.9561],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_ed6009b220d2ae9212d9f5a3e0a6830f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_25b10b869d50973bfd8a035f791ff648 = $(`&lt;div id=&quot;html_25b10b869d50973bfd8a035f791ff648&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:35 km SSW of Aguililla, Mexico magnitude:7.6&lt;/div&gt;`)[0];
+                popup_ed6009b220d2ae9212d9f5a3e0a6830f.setContent(html_25b10b869d50973bfd8a035f791ff648);
+            
+        
+
+        marker_136ca3677f9830cc54a6940180763292.bindPopup(popup_ed6009b220d2ae9212d9f5a3e0a6830f)
+        ;
+
+        
+    
+    
+            var marker_056db0b2f778b922186a34ba8ab6648a = L.marker(
+                [-21.1909, 170.2666],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_eca93cb0615f4c1e3eafe9446db13d53 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_69a4999698661b95eef55342e8bbd1b6 = $(`&lt;div id=&quot;html_69a4999698661b95eef55342e8bbd1b6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:209 km SSE of Isangel, Vanuatu magnitude:7&lt;/div&gt;`)[0];
+                popup_eca93cb0615f4c1e3eafe9446db13d53.setContent(html_69a4999698661b95eef55342e8bbd1b6);
+            
+        
+
+        marker_056db0b2f778b922186a34ba8ab6648a.bindPopup(popup_eca93cb0615f4c1e3eafe9446db13d53)
+        ;
+
+        
+    
+    
+            var marker_da6928b1070a8c2bcea9e2be521f5640 = L.marker(
+                [-6.2944, 146.5038],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_8a3d1e935d813c75264b849688a28a8c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c516f4a24a6af03aebbe962acde7cd9d = $(`&lt;div id=&quot;html_c516f4a24a6af03aebbe962acde7cd9d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:70 km E of Kainantu, Papua New Guinea magnitude:7.6&lt;/div&gt;`)[0];
+                popup_8a3d1e935d813c75264b849688a28a8c.setContent(html_c516f4a24a6af03aebbe962acde7cd9d);
+            
+        
+
+        marker_da6928b1070a8c2bcea9e2be521f5640.bindPopup(popup_8a3d1e935d813c75264b849688a28a8c)
+        ;
+
+        
+    
+    
+            var marker_2c71520c8f9bbaf0be4bb6818e699eff = L.marker(
+                [17.5207, 120.8181],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_90497731fe6a0af88900f88678748c22 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_6bf303317f0db26d028cc0fd2fb86157 = $(`&lt;div id=&quot;html_6bf303317f0db26d028cc0fd2fb86157&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:11 km NE of Bantay, Philippines magnitude:7&lt;/div&gt;`)[0];
+                popup_90497731fe6a0af88900f88678748c22.setContent(html_6bf303317f0db26d028cc0fd2fb86157);
+            
+        
+
+        marker_2c71520c8f9bbaf0be4bb6818e699eff.bindPopup(popup_90497731fe6a0af88900f88678748c22)
+        ;
+
+        
+    
+    
+            var marker_85a873a1160a960f737068f7e15a930a = L.marker(
+                [-14.9076, -70.2924],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_2810faa3ebb12fc0d8e0424b2e8d3d2a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_8da6b995fe3236f7317ae05ddaea10ae = $(`&lt;div id=&quot;html_8da6b995fe3236f7317ae05ddaea10ae&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:10 km W of Azángaro, Peru magnitude:7.2&lt;/div&gt;`)[0];
+                popup_2810faa3ebb12fc0d8e0424b2e8d3d2a.setContent(html_8da6b995fe3236f7317ae05ddaea10ae);
+            
+        
+
+        marker_85a873a1160a960f737068f7e15a930a.bindPopup(popup_2810faa3ebb12fc0d8e0424b2e8d3d2a)
+        ;
+
+        
+    
+    
+            var marker_8d730cf5aa8f40dae942ed31c1bae333 = L.marker(
+                [-22.586, 170.3744],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_d3b7cde8cc97fe16e802148e6aa86004 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_57d64116a128ef584cb2a8a7661663d6 = $(`&lt;div id=&quot;html_57d64116a128ef584cb2a8a7661663d6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:southeast of the Loyalty Islands magnitude:7&lt;/div&gt;`)[0];
+                popup_d3b7cde8cc97fe16e802148e6aa86004.setContent(html_57d64116a128ef584cb2a8a7661663d6);
+            
+        
+
+        marker_8d730cf5aa8f40dae942ed31c1bae333.bindPopup(popup_d3b7cde8cc97fe16e802148e6aa86004)
+        ;
+
+        
+    
+    
+            var marker_0b1cd9a62e367672906ad200589249f7 = L.marker(
+                [37.7132, 141.5793],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_77a5cf7ebcd757e02c985242d39a3e8b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_6e81cefd6177453d1b4a1005720e8706 = $(`&lt;div id=&quot;html_6e81cefd6177453d1b4a1005720e8706&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:57 km ENE of Namie, Japan magnitude:7.3&lt;/div&gt;`)[0];
+                popup_77a5cf7ebcd757e02c985242d39a3e8b.setContent(html_6e81cefd6177453d1b4a1005720e8706);
+            
+        
+
+        marker_0b1cd9a62e367672906ad200589249f7.bindPopup(popup_77a5cf7ebcd757e02c985242d39a3e8b)
+        ;
+
+        
+    
+    
+            var marker_ab8d928118e0bb0fc0edac91a56698c3 = L.marker(
+                [-7.5482, 127.5773],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_00a01798c58428fe3e829d65966d3cd2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c2293ad09a18270428e6f952ce6257a4 = $(`&lt;div id=&quot;html_c2293ad09a18270428e6f952ce6257a4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:125 km NNE of Lospalos, Timor Leste magnitude:7.3&lt;/div&gt;`)[0];
+                popup_00a01798c58428fe3e829d65966d3cd2.setContent(html_c2293ad09a18270428e6f952ce6257a4);
+            
+        
+
+        marker_ab8d928118e0bb0fc0edac91a56698c3.bindPopup(popup_00a01798c58428fe3e829d65966d3cd2)
+        ;
+
+        
+    
+    
+            var marker_0de94d04892adb3a5232291ee8c2e058 = L.marker(
+                [-7.6033, 122.2274],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_32cf15e0edffd345e24159cfe9786a9e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b78e862b5358006f68c6405773330352 = $(`&lt;div id=&quot;html_b78e862b5358006f68c6405773330352&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Flores Sea magnitude:7.3&lt;/div&gt;`)[0];
+                popup_32cf15e0edffd345e24159cfe9786a9e.setContent(html_b78e862b5358006f68c6405773330352);
+            
+        
+
+        marker_0de94d04892adb3a5232291ee8c2e058.bindPopup(popup_32cf15e0edffd345e24159cfe9786a9e)
+        ;
+
+        
+    
+    
+            var marker_3124a6cccc20c4d70f8d6dbf4bbcc548 = L.marker(
+                [-4.4667, -76.8126],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_ac70a61f7b1faebb53673cb5171a8dd8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_f038cc9fe5abc9bb9035093cab38c154 = $(`&lt;div id=&quot;html_f038cc9fe5abc9bb9035093cab38c154&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:43 km NNW of Barranca, Peru magnitude:7.5&lt;/div&gt;`)[0];
+                popup_ac70a61f7b1faebb53673cb5171a8dd8.setContent(html_f038cc9fe5abc9bb9035093cab38c154);
+            
+        
+
+        marker_3124a6cccc20c4d70f8d6dbf4bbcc548.bindPopup(popup_ac70a61f7b1faebb53673cb5171a8dd8)
+        ;
+
+        
+    
+    
+            var marker_b4211edde33616a0db243d8c2db50c90 = L.marker(
+                [-21.1265, 174.8958],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_71f2610b072c396867048db3d1faa705 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_35c55086267a197c3c804b5a106d6f76 = $(`&lt;div id=&quot;html_35c55086267a197c3c804b5a106d6f76&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Vanuatu region magnitude:7.3&lt;/div&gt;`)[0];
+                popup_71f2610b072c396867048db3d1faa705.setContent(html_35c55086267a197c3c804b5a106d6f76);
+            
+        
+
+        marker_b4211edde33616a0db243d8c2db50c90.bindPopup(popup_71f2610b072c396867048db3d1faa705)
+        ;
+
+        
+    
+    
+            var marker_442ad20e602a44c691d58a35c6ccfccc = L.marker(
+                [16.9465, -99.753],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_30cea600cfedc48b61ad743c1aca0c2a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_0deade3b69dd3b3d374e92ed6be93f0a = $(`&lt;div id=&quot;html_0deade3b69dd3b3d374e92ed6be93f0a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Acapulco, Mexico magnitude:7&lt;/div&gt;`)[0];
+                popup_30cea600cfedc48b61ad743c1aca0c2a.setContent(html_0deade3b69dd3b3d374e92ed6be93f0a);
+            
+        
+
+        marker_442ad20e602a44c691d58a35c6ccfccc.bindPopup(popup_30cea600cfedc48b61ad743c1aca0c2a)
+        ;
+
+        
+    
+    
+            var marker_bc090b63ba78a8698cf4e4ad7b4fdfbf = L.marker(
+                [-60.2845, -24.8743],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_39e3c02656487e9bd61f96a2871b48c9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_dfc566f784ae7bda287e4e28029e9a70 = $(`&lt;div id=&quot;html_dfc566f784ae7bda287e4e28029e9a70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:South Sandwich Islands region magnitude:7.1&lt;/div&gt;`)[0];
+                popup_39e3c02656487e9bd61f96a2871b48c9.setContent(html_dfc566f784ae7bda287e4e28029e9a70);
+            
+        
+
+        marker_bc090b63ba78a8698cf4e4ad7b4fdfbf.bindPopup(popup_39e3c02656487e9bd61f96a2871b48c9)
+        ;
+
+        
+    
+    
+            var marker_67b7b73b9cc48b0669e266d03b882b7d = L.marker(
+                [18.4335, -73.4822],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_1b79a1b5d7a97593f2498c6fa86d17bb = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_f178c731e97fa34b0b2357ae886c7533 = $(`&lt;div id=&quot;html_f178c731e97fa34b0b2357ae886c7533&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Nippes, Haiti magnitude:7.2&lt;/div&gt;`)[0];
+                popup_1b79a1b5d7a97593f2498c6fa86d17bb.setContent(html_f178c731e97fa34b0b2357ae886c7533);
+            
+        
+
+        marker_67b7b73b9cc48b0669e266d03b882b7d.bindPopup(popup_1b79a1b5d7a97593f2498c6fa86d17bb)
+        ;
+
+        
+    
+    
+            var marker_d02a7f833745d181cb2bcd68cf97e10b = L.marker(
+                [-58.3753, -25.2637],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_fb0b648eb05c94f684848063b9c0afdf = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a7dc31958d2c3b707876e371e7df4b23 = $(`&lt;div id=&quot;html_a7dc31958d2c3b707876e371e7df4b23&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:South Sandwich Islands region magnitude:8.1&lt;/div&gt;`)[0];
+                popup_fb0b648eb05c94f684848063b9c0afdf.setContent(html_a7dc31958d2c3b707876e371e7df4b23);
+            
+        
+
+        marker_d02a7f833745d181cb2bcd68cf97e10b.bindPopup(popup_fb0b648eb05c94f684848063b9c0afdf)
+        ;
+
+        
+    
+    
+            var marker_229b989ad3f3f1b8d8db669a2d22bc52 = L.marker(
+                [-57.5674, -25.0316],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_ba424c8d5b03026a8dc5d7f0794140ab = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_13fcbd9c4fd446a63c33668ed46fef20 = $(`&lt;div id=&quot;html_13fcbd9c4fd446a63c33668ed46fef20&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:South Sandwich Islands region magnitude:7.5&lt;/div&gt;`)[0];
+                popup_ba424c8d5b03026a8dc5d7f0794140ab.setContent(html_13fcbd9c4fd446a63c33668ed46fef20);
+            
+        
+
+        marker_229b989ad3f3f1b8d8db669a2d22bc52.bindPopup(popup_ba424c8d5b03026a8dc5d7f0794140ab)
+        ;
+
+        
+    
+    
+            var marker_02c91f0a567b240d9ad127ca2a7ece44 = L.marker(
+                [6.4748, 126.7151],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_7b61311ab5f72babb6c7651e67a9ff6a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_349fec8c7e0813bd16b5a29c152a1632 = $(`&lt;div id=&quot;html_349fec8c7e0813bd16b5a29c152a1632&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:60 km ENE of Pondaguitan, Philippines magnitude:7.1&lt;/div&gt;`)[0];
+                popup_7b61311ab5f72babb6c7651e67a9ff6a.setContent(html_349fec8c7e0813bd16b5a29c152a1632);
+            
+        
+
+        marker_02c91f0a567b240d9ad127ca2a7ece44.bindPopup(popup_7b61311ab5f72babb6c7651e67a9ff6a)
+        ;
+
+        
+    
+    
+            var marker_537c3077593151c4fbdf2c9a9422e805 = L.marker(
+                [55.3635, -157.8876],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_b15177ad8388378007fee82d6dbc47e3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_83cc1382bb11b5e1baa109e464756962 = $(`&lt;div id=&quot;html_83cc1382bb11b5e1baa109e464756962&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Alaska Peninsula magnitude:8.2&lt;/div&gt;`)[0];
+                popup_b15177ad8388378007fee82d6dbc47e3.setContent(html_83cc1382bb11b5e1baa109e464756962);
+            
+        
+
+        marker_537c3077593151c4fbdf2c9a9422e805.bindPopup(popup_b15177ad8388378007fee82d6dbc47e3)
+        ;
+
+        
+    
+    
+            var marker_2f947c76d0aef7ce43277159f4391488 = L.marker(
+                [34.5983, 98.2513],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_d6577004b41b29d8abb386e0adb5e3ae = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d5eeefd8ebcee8df927ba23ac048b9cd = $(`&lt;div id=&quot;html_d5eeefd8ebcee8df927ba23ac048b9cd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Southern Qinghai, China magnitude:7.3&lt;/div&gt;`)[0];
+                popup_d6577004b41b29d8abb386e0adb5e3ae.setContent(html_d5eeefd8ebcee8df927ba23ac048b9cd);
+            
+        
+
+        marker_2f947c76d0aef7ce43277159f4391488.bindPopup(popup_d6577004b41b29d8abb386e0adb5e3ae)
+        ;
+
+        
+    
+    
+            var marker_48c310bc8f82fef61bbf0d88000cdfe5 = L.marker(
+                [38.4515, 141.6477],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_21b4e673c93fc29a066ac42c5e376ae6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_e39c247794a2d209c03e47191b880600 = $(`&lt;div id=&quot;html_e39c247794a2d209c03e47191b880600&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:30 km E of Ishinomaki, Japan magnitude:7&lt;/div&gt;`)[0];
+                popup_21b4e673c93fc29a066ac42c5e376ae6.setContent(html_e39c247794a2d209c03e47191b880600);
+            
+        
+
+        marker_48c310bc8f82fef61bbf0d88000cdfe5.bindPopup(popup_21b4e673c93fc29a066ac42c5e376ae6)
+        ;
+
+        
+    
+    
+            var marker_42e218cd4340f993f64491b3a4f538d0 = L.marker(
+                [-29.7228, -177.2794],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_180a7d384c333538564fc87f28c346ac = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_dee6a8c1805241061be8d3c1633b5ee7 = $(`&lt;div id=&quot;html_dee6a8c1805241061be8d3c1633b5ee7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Kermadec Islands, New Zealand magnitude:8.1&lt;/div&gt;`)[0];
+                popup_180a7d384c333538564fc87f28c346ac.setContent(html_dee6a8c1805241061be8d3c1633b5ee7);
+            
+        
+
+        marker_42e218cd4340f993f64491b3a4f538d0.bindPopup(popup_180a7d384c333538564fc87f28c346ac)
+        ;
+
+        
+    
+    
+            var marker_035a85bbb91254f1110fee6cc467b159 = L.marker(
+                [-29.6768, -177.8398],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_5e65073ead3925ca9cd3d4a5a2618852 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a182aa67cc29770754dc0d408005c2d1 = $(`&lt;div id=&quot;html_a182aa67cc29770754dc0d408005c2d1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:Kermadec Islands, New Zealand magnitude:7.4&lt;/div&gt;`)[0];
+                popup_5e65073ead3925ca9cd3d4a5a2618852.setContent(html_a182aa67cc29770754dc0d408005c2d1);
+            
+        
+
+        marker_035a85bbb91254f1110fee6cc467b159.bindPopup(popup_5e65073ead3925ca9cd3d4a5a2618852)
+        ;
+
+        
+    
+    
+            var marker_9e00bebaef13753de30b9ed15fc796e7 = L.marker(
+                [-37.4787, 179.4576],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_3e6f53065011b2b57ea37eff40de3df2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_93c1932ccafc43ce83baa87e9369a880 = $(`&lt;div id=&quot;html_93c1932ccafc43ce83baa87e9369a880&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:182 km NE of Gisborne, New Zealand magnitude:7.3&lt;/div&gt;`)[0];
+                popup_3e6f53065011b2b57ea37eff40de3df2.setContent(html_93c1932ccafc43ce83baa87e9369a880);
+            
+        
+
+        marker_9e00bebaef13753de30b9ed15fc796e7.bindPopup(popup_3e6f53065011b2b57ea37eff40de3df2)
+        ;
+
+        
+    
+    
+            var marker_22b7dcfcce7709c2497f22382f04ab9b = L.marker(
+                [37.7265, 141.7751],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_3bb1d43c9fcf35ca53ccff76a1f8ab17 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_6ffe244b6012d41d0fd8f96761dc617e = $(`&lt;div id=&quot;html_6ffe244b6012d41d0fd8f96761dc617e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:73 km ENE of Namie, Japan magnitude:7.1&lt;/div&gt;`)[0];
+                popup_3bb1d43c9fcf35ca53ccff76a1f8ab17.setContent(html_6ffe244b6012d41d0fd8f96761dc617e);
+            
+        
+
+        marker_22b7dcfcce7709c2497f22382f04ab9b.bindPopup(popup_3bb1d43c9fcf35ca53ccff76a1f8ab17)
+        ;
+
+        
+    
+    
+            var marker_b072519ef9b3cb43690105aec33bd57a = L.marker(
+                [-23.0511, 171.6566],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_51f3f56c5f4e357388c1719e841e73c8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_06f4adac6bb698466a8f5e74dfddaeb9 = $(`&lt;div id=&quot;html_06f4adac6bb698466a8f5e74dfddaeb9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:southeast of the Loyalty Islands magnitude:7.7&lt;/div&gt;`)[0];
+                popup_51f3f56c5f4e357388c1719e841e73c8.setContent(html_06f4adac6bb698466a8f5e74dfddaeb9);
+            
+        
+
+        marker_b072519ef9b3cb43690105aec33bd57a.bindPopup(popup_51f3f56c5f4e357388c1719e841e73c8)
+        ;
+
+        
+    
+    
+            var marker_ebe54d8c048258dc62271188bee0db6e = L.marker(
+                [4.9931, 127.5145],
+                {}
+            ).addTo(map_c1234a4d7a2184b254e6b3569974bce8);
+        
+    
+        var popup_9608fd21521dfd22b30d7571edc1c0d2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_8c2bfecc53dc2991c283bec7d9b0ada0 = $(`&lt;div id=&quot;html_8c2bfecc53dc2991c283bec7d9b0ada0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;place:211 km SE of Pondaguitan, Philippines magnitude:7&lt;/div&gt;`)[0];
+                popup_9608fd21521dfd22b30d7571edc1c0d2.setContent(html_8c2bfecc53dc2991c283bec7d9b0ada0);
+            
+        
+
+        marker_ebe54d8c048258dc62271188bee0db6e.bindPopup(popup_9608fd21521dfd22b30d7571edc1c0d2)
+        ;
+
+        
+    
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./nb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Keith E. Maull & The SOARS Program
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

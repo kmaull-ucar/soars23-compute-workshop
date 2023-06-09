@@ -1,48 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Algorithms and Computational Thinking &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,59 +62,93 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week02a';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <link rel="next" title="Tools, Guides and Inspiration" href="tools.html" />
+    <link rel="prev" title="Jupyter Fundamentals" href="week01c.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Computational Thinking and Scientific Data Science SOARS 2023</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -111,230 +157,381 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 1
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="week01a.html">
-   (*) Scientific Computing Today
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week01b.html">
-   Python Fundamentals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week01c.html">
-   Jupyter Fundamentals
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="week01a.html">(*) Scientific Computing Today</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week01b.html">Python Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week01c.html">Jupyter Fundamentals</a></li>
+
+
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Tools &amp; Resources
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algorithms and Computational Thinking</a></li>
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="tools.html">
-   Tools, Guides and Inspiration
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="readings.html">
-   Readings
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools, Guides and Inspiration</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="readings.html">Readings</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/week02a.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
 
 
-          
 
 
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/week02a.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Algorithms and Computational Thinking
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#developing-strategies-for-larger-more-complex-notebooks">
-   developing strategies for larger, more complex notebooks
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Algorithms and Computational Thinking</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Algorithms and Computational Thinking
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#developing-strategies-for-larger-more-complex-notebooks">
-   developing strategies for larger, more complex notebooks
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Algorithms and Computational Thinking</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algorithms and Computational Thinking</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-computational-thinking">What is “computational thinking”?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-ingredients">Key Ingredients</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computation">Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithms">Algorithms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complexity">Complexity</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithms-a-quick-tour">Algorithms: A Quick Tour</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-structures-a-quick-tour">Data Structures: A Quick Tour</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section id="algorithms-and-computational-thinking">
-<h1>Algorithms and Computational Thinking<a class="headerlink" href="#algorithms-and-computational-thinking" title="Permalink to this headline">#</a></h1>
+<h1>Algorithms and Computational Thinking<a class="headerlink" href="#algorithms-and-computational-thinking" title="Permalink to this heading">#</a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm objectives docutils">
+<div class="sd-card-header text-center font-weight-bold docutils">
+<p class="sd-card-text"><strong>OBJECTIVES</strong></p>
+</div>
+<div class="sd-card-body bg-light font-italic docutils">
+<ul class="simple">
+<li><p class="sd-card-text">what is computational thinking</p></li>
+<li><p class="sd-card-text">problem solving and thinking through algorithms</p></li>
+<li><p class="sd-card-text">how to reduce complexity for understanding</p></li>
+<li><p class="sd-card-text">Algorithms: A quick tour</p></li>
+</ul>
+</div>
+</div>
+<p>We are now in the epoch of human development where the transition from physical machines augmenting (and in some cases replacing) the work of <em>human bodies</em> is giving way to  <em>digital machines</em> augmenting the work of <em>the human mind</em>.  As was the case during the rise of mechanized machines automating human labor as the industrial revolution charged forward, with our digital machines and technologized transformations of work, a fertile ground is being cultivated for computers to be planted into nearly every creative endeavor of human activity, and sometimes providing the only tools with which human creativity can flourish at scale.</p>
+<p>Indeed, in nearly every scientific discipline today  <em>computation</em> has crept in.  Most numerically-grounded and big data intensive sciences cannot produce any relevant outcomes without computer software, and now nearly <em>any discipline</em> that generates large amounts of data will fail to escape computation as a necessary path to progress.  Indeed, computation is now considered the <a class="reference external" href="https://physicsworld.com/a/the-third-pillar-of-science/">third “pillar” of science</a> (the first two being theory and experiment) and we have relied on computers for a great many things in these disciplinary contexts in science – but reasoning about how computing can bear on solutions to  domain-level disciplinary problems is why <em>computational thinking</em> is so necessary today. Here, it is the <em>thinking</em> part that is at parity with the <em>computation</em> part.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/abstract-geometric-wavy-folds-background.jpg"><img alt="abstract image" class="bg-primary mb-1 align-center" src="_images/abstract-geometric-wavy-folds-background.jpg" style="width: 640px;" /></a>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="developing-strategies-for-larger-more-complex-notebooks">
-<h1>developing strategies for larger, more complex notebooks<a class="headerlink" href="#developing-strategies-for-larger-more-complex-notebooks" title="Permalink to this headline">#</a></h1>
+<section id="what-is-computational-thinking">
+<h1>What is “computational thinking”?<a class="headerlink" href="#what-is-computational-thinking" title="Permalink to this heading">#</a></h1>
+<p>Generically, computational thinking involves the <em>processes</em> necessary to construct solutions to complex problems to be carried out by machines and humans <span id="id1">[<a class="reference internal" href="readings.html#id6" title="Jeannette M. Wing. Computational thinking. Communications of the ACM, 49(3):33–35, March 2006. URL: https://dl.acm.org/doi/10.1145/1118178.1118215 (visited on 2023-03-22), doi:10.1145/1118178.1118215.">Win06</a>]</span>, and at its core requires analyzing patterns and developing appropriate abstractions (models) to problems.  It also requires an awareness of computational strategies, experience with data analysis and skill projecting computational techniques onto domain-specific problems.  Today, few domains can progress without the new generation of experts having intimate knowledge and skill in “computational thinking”.</p>
+</section>
+<section id="key-ingredients">
+<h1>Key Ingredients<a class="headerlink" href="#key-ingredients" title="Permalink to this heading">#</a></h1>
+<p>The key ingredients to computational thinking are: data, abstraction/modeling and computation.  We will explore each of these separately, but nearly all of your work begins with some specific dats (simple or complex), which within the context of your domain, requires some modeling or abstraction of the problem space.  From that abstraction, computational solutions can be crafted and ultimately may yield more data, analyses or additional insights to improve modeling or abstraction.</p>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
+<p>We will begin our travels into the realm of computational thinking by first situating ourselves in the world of data.  Without data, there is no computation. Computational thinking is the tool we will use to get what we need from our data and with it, answering relevant questions of interest (or ask new ones).  Some of the approaches we will learn will require knowledge of a programming language, and perhaps knowledge of data formats and ways to transform that data.  Other approaches will require higher level abstractions to unlock a solution or to make a small step towards one.  The interplay of both the <em>low-level specialized tools</em> (a programming language), and the <em>high level abstractions</em> (e.g. algorithmic pseudocode) will bring us to a more productive relationship with our computational work.</p>
+<div class="tip admonition">
+<p class="admonition-title">What is “psuedocode”?</p>
+<p>Psuedocode refers to the high level “sketch” of your code, written in a way that
+is more of a shorthand description of what your code is supposed to do.  While there’s
+not a “formal” shorthand, per set, and in the beginning it is best your psuedocode
+is at least understandable by you, as you progress and mature, your psuedocode might look
+very close to the final code, especially if you stay in Python.</p>
+<p>Here is example psuedocode for a random password generator:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>variable P is a string of length 2 or more that hold the password
+
+set P = an empty string
+set size = an integer between 2 and 30 for an arbitrary password
+set alpha = the set of upper and lowercase letters
+
+for i = 0 to size
+    set N[i] = a random character from alpha 
+</pre></div>
+</div>
+</div>
+<p>In Python, we will be well served to think about all “things” in the Python world as <strong>data objects</strong> – that is objects that contain some data, whether structured or not.  In the next few paragraphs we will explain what structured and unstructured data are and various techniques to deal with each in Python.</p>
+<p>Data typically come in two forms: <em>unstructured</em> and <em>structured</em>.  We’ll break each of them down to develop a more rigorous approach to computational thinking.</p>
+<p><strong>UNSTRUCTURED DATA</strong></p>
+<p><em>Unstructured data</em> is all around us, indeed, this type of data is what reminds us not only how far we have to go to move human knowledge into machines, but perhaps how interesting, strange and beautiful human creativity actually is.  Unstructured data are all those forms of data that either have not yet been, or resist altogether, being converted to a machine-ready, machine-interpretable form.  Think about such data as that which looks the same in a book as it does in a text file.  Shakespeare’s <em>Hamlet</em>, for example – at least at the textual level that it contains, is considered “unstructured data”.  We would say, however, that there is a structured form of the plan which would include it’s various parts, plots, characters, etc. once we have read and <em>interpreted</em> it, and rightfully added <em>metadata</em> about it.  Much of the human world belongs to unstructured data, until information scientists put structure to it often through <em>metadata</em>.  In fact, much of the “structured” data of “unstructured” data, is captured as metadata – or data <em>about</em> the thing, as opposed to the thing itself.  It will take some getting used to, but if in its raw form, data does not seem amenable to direct computational inspection or manipulation, the it is a good candidate “unstructured” data.</p>
+<p>To cement this idea, consider the bits of a digital image as unstructured until it is displayed on a computer and viewed and interpreted by a human as a cat.  There is no structure to the image that a machine can <em>understand</em> outside of its metadata which would include things like the time the image was captured, the resolution of the image, color depth, etc.  Of course, if  we try to analyze those bits, perhaps with some algorithm to detect patterns in that unstructured sequence of bits, we might arrive at a different conclusion about whether the image was of a cat, dog or car.</p>
+<p><strong>STRUCTURED DATA</strong></p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="_images/2808109_18384.jpg"><img alt="_images/2808109_18384.jpg" src="_images/2808109_18384.jpg" style="width: 250px;" /></a>
+</figure>
+<p>The opposite of unstructured data is structured data, and it is typical to work with structured data in the numerically-driven sciences.  One of the primary clues you are dealing with structure data is that it is not merely an easily human-readable text file (though in the case of CSV, it will often be ).  It might be a CSV, JSON, XML, NetCDF or any number of various formats that will encode the structured data a particular way so that you can manipulate it more easily.  Some of these formats may require special tools to inspect their data, others will have built in readers in Python (e.g. CSV) and others yet, may require database tools to read them.  Whatever the case, study the data format you have before working with it – you will find it important to understand this well in advance of any analysis you might need to do.</p>
+<p>Here is a list of common structure data formats:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-right"><p>Format</p></th>
+<th class="head text-left"><p>Description</p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-center"><p>Python Library</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-right"><p>CSV</p></td>
+<td class="text-left"><p>“Comma Separated Values” represent columns, while each line represents a row of data; common in a variety of contexts</p></td>
+<td class="text-left"><p><a class="reference external" href="https://github.com/leokassio/weather-underground-data/blob/master/data/bangkok-2015.csv">example</a></p></td>
+<td class="text-center"><p><a class="reference external" href="https://docs.python.org/3/library/csv.html?highlight=csv">csv</a>, <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html">pandas</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-right"><p>XML</p></td>
+<td class="text-left"><p>“eXtensible Markup Language” flexibly represent complex data in a very structured way that usually require special parsers; data files can be validated against a known structure</p></td>
+<td class="text-left"><p><span class="xref myst"></span></p></td>
+<td class="text-center"><p><a class="reference external" href="https://docs.python.org/3/library/xml.html">xml</a>, <a class="reference external" href="https://pandas.pydata.org/docs/dev/reference/api/pandas.read_xml.html">pandas</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-right"><p>JSON</p></td>
+<td class="text-left"><p>“JavaScript Object Notation” represents data much like XML in a structured, but less strict form</p></td>
+<td class="text-left"><p><a class="reference external" href="https://github.com/leokassio/weather-underground-data/blob/master/data/bangkok-2015.csv">example</a></p></td>
+<td class="text-center"><p><a class="reference external" href="https://docs.python.org/3/library/json.html">json</a>, <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_json.html">pandas</a>, <a class="reference external" href="https://geojson.org">geojson</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-right"><p>netCDF4</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">Network Common Data Format</a> v4 developed and maintained here at UCAR by <a class="reference external" href="https://www.unidata.ucar.edu/">Unidata</a> represent complex multi-dimensional data in a variety of sciences; common in Geosciences and usually require special libraries to parse</p></td>
+<td class="text-left"><p><a class="reference external" href="https://github.com/Unidata/MetPy/blob/main/staticdata/NAM_test.nc">example</a></p></td>
+<td class="text-center"><p><a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/io.html#netcdf">xarray</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="computation">
+<h2>Computation<a class="headerlink" href="#computation" title="Permalink to this heading">#</a></h2>
+<p>Computational thinking, therefore, begins with the problem of taking unstructured or structured data and <em>doing</em> something with it.  Perhaps we want to detect patterns in a sequence of bits – a <em>computational</em> approach will need to be developed parse those bits and then look for patterns.  It might be that we have data about hourly air temperatures and need to understand the median or mean of those temperatures.  A <em>computational</em> approach will be necessary (albeit one we have likely already been exposed to) to get at those answers.  When we look at computational thinking, we don’t always have to think about <em>novel</em> approaches, some are the same old tried and true one’s that we’ve known for some time (mean), while others will require a high degree of ingenuity and cleverness.</p>
+</section>
+<section id="algorithms">
+<h2>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this heading">#</a></h2>
+<p>Algorithms are at the heart of computation and if data are the gasoline, algorithms are the engine, but let us be clear: algorithms <em>do not require a computer</em>, but with the data of today, nothing of value is possible <em>without a computer</em>.</p>
+<p>Thus, algorithms are the fundamental building blocks of computation – without them, the functioning of most of what we could call “the modern data analysis”, would cease to exist.  Algorithms are all around us, and here are a few basic definitions of algorithms to consider:</p>
+<ul class="simple">
+<li><p><em>“methods for solving problems which are suited for computer implementation”</em>
+(Sedgewick)</p></li>
+<li><p><em>“an exact prescription, defining a computational process, leading from various initial data to the desired result”</em>(Markov)</p></li>
+<li><p><em>“a set of rules which tell us, from moment to moment, precisely how to behave”</em> (Minsky)</p></li>
+</ul>
+<p><strong>Data provide the raw material to algorithms</strong> so that the underlying value of that data can be realized.  Algorithms are the recipes that bring the raw material of data into the myriad of dishes we do analysis and interpretation over, and form the basis of the <em>procedural</em> work of computational thinking.  We will not only need to understand how to decompose data into its constituent parts so we might know what questions we can ask, we develop algorithms to help answer those questions.</p>
+<p>For many of us, however, an algorithm is realized as a program, and later, we will evolve our thinking more fully, but the abstract heart of an algorithm is <em>the application of some process or processes within a loop over some data</em>.</p>
+</section>
+<section id="complexity">
+<h2>Complexity<a class="headerlink" href="#complexity" title="Permalink to this heading">#</a></h2>
+<p>One of most important (and overlooked) things we can do to step to computational thinking on the right foot, is to recognize that <em>complexity is not our friend</em>, and we must work hard to <em>manage or reduce</em> it as much as possible.  Not only algorithmic complexity, but the problem complexity and even organizational complexity.  There is a different complexity in the world of algorithms that we won’t broach here, but know that is a different (and also important) complexity that requires a different frame to discuss in the context of the <a class="reference external" href="https://www.geeksforgeeks.org/complete-guide-on-complexity-analysis/">analysis of algorithms</a>.  This tutorial here is not that.</p>
+</section>
+</section>
+<section id="algorithms-a-quick-tour">
+<h1>Algorithms: A Quick Tour<a class="headerlink" href="#algorithms-a-quick-tour" title="Permalink to this heading">#</a></h1>
+<p>If algorithms make the data world go round, here are 4 major concepts that form the <strong>basic foundation</strong>:</p>
+<ul class="simple">
+<li><p>counting</p></li>
+<li><p>summing</p></li>
+<li><p>searching</p></li>
+<li><p>sorting</p></li>
+</ul>
+<p>The good news is that most modern programming languages implement the basic versions of these concepts for free, so you can build on them.  You will quickly find that most algorithms build on these simple constructs into more complex constructs.  You will also recognize that some of these are variants of one another.  For example, if you are trying to find the min/max value in a sequence, the problem could be solved with searching or sorting algorithms.</p>
+<p>But let’s go through these concepts in notebooks so we can see how we go from the <em>idea</em> to <em>the code</em> (however simple).</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Notebook</p></th>
+<th class="head text-left"><p>Concepts</p></th>
+<th class="head text-center"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-left"><p>Counting algorithms</p></td>
+<td class="text-center"><p><span class="xref myst">nb/w02_algos_counting.ipynb</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-left"><p>Summing algorithms</p></td>
+<td class="text-center"><p><span class="xref myst">nb/w02_algos_summing.ipynb</span></p></td>
+</tr>
+</tbody>
+</table>
+<!-- | 3 | Min/Max algorithms | [nb/w02_algos_minmax.ipynb](nb/w02_algos_minmax.ipynb) | -->
+<p>| 3 | Sorting/Searching algorithms | <span class="xref myst">nb/w02_algos_searchsort.ipynb</span> |</p>
+</section>
+<section id="data-structures-a-quick-tour">
+<h1>Data Structures: A Quick Tour<a class="headerlink" href="#data-structures-a-quick-tour" title="Permalink to this heading">#</a></h1>
+<p>Algorithms are easy to understand when there are simple things to run them on (numbers, strings), but the world
+is much more complex (not really, but really), so we need to <em>create</em> data structures to hold more complex
+versions of simple things like numbers and strings.  Don’t worry, if you’ve used a list, you’ve already
+had your initial run in with a data structure (albeit a simple one).  You may have run into more complex
+versions of lists as well – say a <em>queue</em> … the typical grocery store line.  The first people in the line
+are the first out of the store, when there is one register.  When there are multiple registers, this
+may not hold true.  You can think more on what the optimal number of registers a store needs to have that would
+guarantee a line wait time of no more than 2 minutes, if the average register time is 90 seconds.</p>
+<p>This type of problem is where algorithms meet data structures and where computation thinking begins to
+get interesting (and complicated).</p>
+<p>Stepping back a bit, let’s do a quick tour of data structures in Jupyter notebooks:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Notebook</p></th>
+<th class="head text-left"><p>Concepts</p></th>
+<th class="head text-center"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-left"><p>List (and list-like) data structures</p></td>
+<td class="text-center"><p><span class="xref myst">nb/w02_ds_lists.ipynb</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-left"><p>key-value pair data structures</p></td>
+<td class="text-center"><p><span class="xref myst">nb/w02_ds_keyvals.ipynb</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td class="text-left"><p>Variations of these themes</p></td>
+<td class="text-center"><p><span class="xref myst">nb/w02_ds_variations.ipynb</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 
     <script type="text/x-thebe-config">
@@ -349,7 +546,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -357,36 +554,116 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By The SOARS Program<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
 
-
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="week01c.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Jupyter Fundamentals</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="tools.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tools, Guides and Inspiration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algorithms and Computational Thinking</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-computational-thinking">What is “computational thinking”?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-ingredients">Key Ingredients</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computation">Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithms">Algorithms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complexity">Complexity</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithms-a-quick-tour">Algorithms: A Quick Tour</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-structures-a-quick-tour">Data Structures: A Quick Tour</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Keith E. Maull & The SOARS Program
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

@@ -1,19 +1,21 @@
 Scientific Computing, Computational Workflows and Jupyter/Python
 ======  
 
-````{dropdown}  OBJECTIVES
-:container: + shadow
-:title: bg-secondary text-white text-center font-weight-bold
-:body: bg-light font-italic
-:animate: fade-in
-:open:
+```{card}  
+:class-card: objectives 
+:class-header: text-center font-weight-bold
+:class-body: bg-light font-italic 
+
+
+**OBJECTIVES**
+^^^
 
 * scientific computing today
 * (re)Introduction to Jupyter
 * computational narratives
 * understanding basic git and Github
 * understanding the role of Linux in scientific computing 
-````
+```
 
 ## Scientific Computing Today
 
@@ -29,6 +31,8 @@ There are several axes that support the scientific computing skill today:
 
 **Computational thinking** {cite:ps}`wing_computational_2006` is the modern approach to learning how to write code for computers, but it extends well beyond merely programming machines and into _strategic_ problem solving with _automation_ and _data_.  This is what makes the conversation so apt for scientific thinking, because at the heart of all science is data, and most modern scientific data are overwhelmingly large and thus _require automation_. To be successful today, you must understand the foundations of how algorithms facilitate scientific problem solving with large amounts of data, accelerating advancements at a pace we have yet to understand.
 
+We address computational thinking on its own [here](./week02a.md).
+
 **Software support tools** are required to interact with the myriad computer systems, files and platforms for computing.  These tools may include:
 
 * software revision control systems (i.e. git), 
@@ -37,15 +41,18 @@ There are several axes that support the scientific computing skill today:
 * programming languages (e.g. Python, Javascript) and markup languages (e.g. Markdown, HTML)
 * operating systems optimized for performance scientific computing (e.g. Linux)
 
-**Data analysis and statistical inference** cannot be avoided when talking about _interpretation_ of scientific data and analysis.
+Today,the language in broad use across large swaths of scientific domains from biology, chemistry, physics, atmospheric science and many others is [Python](https://python.org).
 
-Today, however, the language in broad use across large swaths of scientific domains from biology, chemistry, physics, atmospheric science and many others is Python. 
-
-`````{admonition} Open Source Software
+`````{admonition} Open Source Software: What is it?
 :class: info
 
 [Open source software (OSS)](https://opensource.org/) is a software model that promotes transparency, proper attribution (licensing), sharing, distribution and community contribution.  Borrowing from some of the ideals of [Free and Open Source Softwware (FOSS)](), which is a distinctly different (but also similar) model to OSS, scientific research should strive to promote the same ideals: transparency, sharing and community.
 `````
+
+**Data analysis and statistical inference** cannot be avoided when talking about _interpretation_ of scientific data and analysis.  It is no longer possible to perform complex science without some mathematical skill and a basic understanding of statistics.  When combined with software and computational thinking, data analysis and statistical inference can produce powerful outcomes.
+
+Excellent introductions to statistical inference can be found in the [Tools, Guides and Inspiration](./tools.md) resource section of this guide.
+
 
 ## Software Support Tools
 
@@ -189,7 +196,13 @@ For a quick sheet approach to some basic git command line instructions, see
 
 #### Github
 
-![https://github.com/](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+```{image} https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+:alt: Github
+:class: bg-primary mb-1
+:width: 200px
+:align: left
+:url: https://github.com
+```
 
 But one of the most friendly (and popular) front ends to git is [Github](https://github.com), but two other platforms [Gitlab](https://gitlab.org) and [Bitbucket](https://bitbucket.org) offer similar and equally good alternatives.  You are free to use whatever platforms make the most sense for you, your team and your project, though we will focus on Github here.  
 

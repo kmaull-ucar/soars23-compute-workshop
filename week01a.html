@@ -1,48 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Scientific Computing, Computational Workflows and Jupyter/Python &#8212; Computational Thinking and Scientific Data Science SOARS 2023</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,61 +62,93 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week01a';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Python Fundamentals" href="week01b.html" />
     <link rel="prev" title="Welcome to SOARS 2023 Computational Thinking Workshop" href="welcome.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Computational Thinking and Scientific Data Science SOARS 2023</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -113,341 +157,225 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 1
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   (*) Scientific Computing Today
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week01b.html">
-   Python Fundamentals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week01c.html">
-   Jupyter Fundamentals
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">(*) Scientific Computing Today</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week01b.html">Python Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week01c.html">Jupyter Fundamentals</a></li>
+
+
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Tools &amp; Resources
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="tools.html">
-   Tools, Guides and Inspiration
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="readings.html">
-   Readings
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="week02a.html">Algorithms and Computational Thinking</a></li>
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools &amp; Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools, Guides and Inspiration</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="readings.html">Readings</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/week01a.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
 
 
-          
 
 
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/week01a.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scientific-computing-today">
-   Scientific Computing Today
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#software-support-tools">
-   Software Support Tools
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#jupyter">
-     Jupyter
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#structure-of-notebooks-and-narratives">
-       Structure of Notebooks and Narratives
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#computational-narratives">
-       Computational Narratives
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#narrative-structure-flow">
-       Narrative Structure &amp; Flow
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#computational-flow">
-       Computational Flow
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cross-notebook-linking-table-of-contents-and-flow">
-       Cross-notebook Linking, Table of Contents and Flow
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#citation">
-       Citation
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#git-and-github">
-     git and Github
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#git">
-       git
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#github">
-       Github
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Scientific Computing, Computational Workflows and Jupyter/Python</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scientific-computing-today">
-   Scientific Computing Today
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#software-support-tools">
-   Software Support Tools
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#jupyter">
-     Jupyter
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#structure-of-notebooks-and-narratives">
-       Structure of Notebooks and Narratives
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#computational-narratives">
-       Computational Narratives
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#narrative-structure-flow">
-       Narrative Structure &amp; Flow
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#computational-flow">
-       Computational Flow
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cross-notebook-linking-table-of-contents-and-flow">
-       Cross-notebook Linking, Table of Contents and Flow
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#citation">
-       Citation
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#git-and-github">
-     git and Github
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#git">
-       git
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#github">
-       Github
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Scientific Computing, Computational Workflows and Jupyter/Python</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-computing-today">Scientific Computing Today</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-support-tools">Software Support Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter">Jupyter</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-notebooks-and-narratives">Structure of Notebooks and Narratives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-narratives">Computational Narratives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#narrative-structure-flow">Narrative Structure &amp; Flow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-flow">Computational Flow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-notebook-linking-table-of-contents-and-flow">Cross-notebook Linking, Table of Contents and Flow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github">git and Github</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#git">git</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github">Github</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="scientific-computing-computational-workflows-and-jupyter-python">
-<h1>Scientific Computing, Computational Workflows and Jupyter/Python<a class="headerlink" href="#scientific-computing-computational-workflows-and-jupyter-python" title="Permalink to this headline">#</a></h1>
+<h1>Scientific Computing, Computational Workflows and Jupyter/Python<a class="headerlink" href="#scientific-computing-computational-workflows-and-jupyter-python" title="Permalink to this heading">#</a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm objectives docutils">
+<div class="sd-card-header text-center font-weight-bold docutils">
+<p class="sd-card-text"><strong>OBJECTIVES</strong></p>
+</div>
+<div class="sd-card-body bg-light font-italic docutils">
+<ul class="simple">
+<li><p class="sd-card-text">scientific computing today</p></li>
+<li><p class="sd-card-text">(re)Introduction to Jupyter</p></li>
+<li><p class="sd-card-text">computational narratives</p></li>
+<li><p class="sd-card-text">understanding basic git and Github</p></li>
+<li><p class="sd-card-text">understanding the role of Linux in scientific computing</p></li>
+</ul>
+</div>
+</div>
 <section id="scientific-computing-today">
-<h2>Scientific Computing Today<a class="headerlink" href="#scientific-computing-today" title="Permalink to this headline">#</a></h2>
+<h2>Scientific Computing Today<a class="headerlink" href="#scientific-computing-today" title="Permalink to this heading">#</a></h2>
 <p>With the rise of advanced, ubiquitous and inexpensive computing, nearly every scientific  discipline today has (with a mix of excitement and/or hesitation) embraced computing  – and in fact, <em>some</em> computing skill is a practical <em>requirement</em> to do almost any domain-specific work, no matter your discipline (even including the humanities).</p>
 <p>It is daunting to gain skill in the tools and technologies that are driving scientific advancement, and the process takes time and requires continuous learning, since the dominant tools today may not be the same two, five or ten years into the future.</p>
 <p>There are several axes that support the scientific computing skill today:</p>
@@ -457,6 +385,7 @@ title="Print to PDF"
 <li><p><strong>data analysis</strong> and statistical inference skill.</p></li>
 </ul>
 <p><strong>Computational thinking</strong> <span id="id1">[<a class="reference internal" href="readings.html#id6" title="Jeannette M. Wing. Computational thinking. Communications of the ACM, 49(3):33–35, March 2006. URL: https://dl.acm.org/doi/10.1145/1118178.1118215 (visited on 2023-03-22), doi:10.1145/1118178.1118215.">Win06</a>]</span> is the modern approach to learning how to write code for computers, but it extends well beyond merely programming machines and into <em>strategic</em> problem solving with <em>automation</em> and <em>data</em>.  This is what makes the conversation so apt for scientific thinking, because at the heart of all science is data, and most modern scientific data are overwhelmingly large and thus <em>require automation</em>. To be successful today, you must understand the foundations of how algorithms facilitate scientific problem solving with large amounts of data, accelerating advancements at a pace we have yet to understand.</p>
+<p>We address computational thinking on its own <a class="reference internal" href="week02a.html"><span class="doc std std-doc">here</span></a>.</p>
 <p><strong>Software support tools</strong> are required to interact with the myriad computer systems, files and platforms for computing.  These tools may include:</p>
 <ul class="simple">
 <li><p>software revision control systems (i.e. git),</p></li>
@@ -465,17 +394,18 @@ title="Print to PDF"
 <li><p>programming languages (e.g. Python, Javascript) and markup languages (e.g. Markdown, HTML)</p></li>
 <li><p>operating systems optimized for performance scientific computing (e.g. Linux)</p></li>
 </ul>
-<p><strong>Data analysis and statistical inference</strong> cannot be avoided when talking about <em>interpretation</em> of scientific data and analysis.</p>
-<p>Today, however, the language in broad use across large swaths of scientific domains from biology, chemistry, physics, atmospheric science and many others is Python.</p>
+<p>Today,the language in broad use across large swaths of scientific domains from biology, chemistry, physics, atmospheric science and many others is <a class="reference external" href="https://python.org">Python</a>.</p>
 <div class="info admonition">
-<p class="admonition-title">Open Source Software</p>
+<p class="admonition-title">Open Source Software: What is it?</p>
 <p><a class="reference external" href="https://opensource.org/">Open source software (OSS)</a> is a software model that promotes transparency, proper attribution (licensing), sharing, distribution and community contribution.  Borrowing from some of the ideals of <span class="xref myst">Free and Open Source Softwware (FOSS)</span>, which is a distinctly different (but also similar) model to OSS, scientific research should strive to promote the same ideals: transparency, sharing and community.</p>
 </div>
+<p><strong>Data analysis and statistical inference</strong> cannot be avoided when talking about <em>interpretation</em> of scientific data and analysis.  It is no longer possible to perform complex science without some mathematical skill and a basic understanding of statistics.  When combined with software and computational thinking, data analysis and statistical inference can produce powerful outcomes.</p>
+<p>Excellent introductions to statistical inference can be found in the <a class="reference internal" href="tools.html"><span class="doc std std-doc">Tools, Guides and Inspiration</span></a> resource section of this guide.</p>
 </section>
 <section id="software-support-tools">
-<h2>Software Support Tools<a class="headerlink" href="#software-support-tools" title="Permalink to this headline">#</a></h2>
+<h2>Software Support Tools<a class="headerlink" href="#software-support-tools" title="Permalink to this heading">#</a></h2>
 <section id="jupyter">
-<h3>Jupyter<a class="headerlink" href="#jupyter" title="Permalink to this headline">#</a></h3>
+<h3>Jupyter<a class="headerlink" href="#jupyter" title="Permalink to this heading">#</a></h3>
 <p>As you may know, Jupyter is a simple, interactive platform for writing Python code.  To be certain, the Jupyter environment supports multiple languages, including <a class="reference external" href="https://www.r-project.org/">R</a>, <a class="reference external" href="https://julialang.org/">Julia</a> and Java to name a few.  In fact, the name (and spelling) for the work comes from (Ju)lia, (Pyt)hon and (R).</p>
 <p>The appeal of the Jupyter environment is simple:</p>
 <ul class="simple">
@@ -487,7 +417,7 @@ title="Print to PDF"
 <p>Jupyter notebooks can be created in the <a class="reference external" href="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html">standard notebook environment</a> or the newer, expanded feature <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html">Jupyter Lab</a> environment.  Which ever you choose, there are a few basics about the platform that you’ll want to learn and this video may be valuable to introduce you to some of the features of Jupyter Lab.</p>
 <iframe  title="YouTube video player" width="640" height="480"  src="https://www.youtube.com/embed/A5YyoCKxEOU" frameborder="0" allowfullscreen></iframe>
 <section id="structure-of-notebooks-and-narratives">
-<h4>Structure of Notebooks and Narratives<a class="headerlink" href="#structure-of-notebooks-and-narratives" title="Permalink to this headline">#</a></h4>
+<h4>Structure of Notebooks and Narratives<a class="headerlink" href="#structure-of-notebooks-and-narratives" title="Permalink to this heading">#</a></h4>
 <p>Notebooks impart a great deal of flexibility to the creator, and with that flexibility comes some basic responsibilities.  Though not every notebook is meant to be shared, you should assume that the majority of your notebooks <em>will</em> be shared or executed by at least one other person – even if you take the approach that the one other person is your <em>future self five years from now that might have completely forgotten what you were working on at the time the notebook was created</em>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -500,7 +430,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="computational-narratives">
-<h4>Computational Narratives<a class="headerlink" href="#computational-narratives" title="Permalink to this headline">#</a></h4>
+<h4>Computational Narratives<a class="headerlink" href="#computational-narratives" title="Permalink to this heading">#</a></h4>
 <p>The Jupyter environment is designed to support what are called <em>computational narratives</em>
 we’ll talk about what they are and then we’re going to create one ourselves. there’s really nothing special about it – in fact we can initially approach it as a fancy way to indicate a “notebook” that pays special attention to a developing good flow through the core research, implementation (computation) and narrative explanation of that research.  In the end, narratives support the researcher, the audience and the research itself.</p>
 <p>That is to say, and as mentioned previously, the narrative is for you but not <em>only for you</em> – it’s also intended for the audience who will be interested in your work and possibly reproducing it.  Many times we create notebooks are that do not expose details  about what trying to accomplish in the notebook – indeed, many times we develop a single notebook with a large amount of code to produce a graphic of visualization, and months later when we return to it, we are unsure exactly what the intent of the code was, or worse, when we try to modify the code that was there (say, to update the data or improve it) we end up unnecessarily repeating previous work.  With a narrative in place we can position our work to be more intentional and thus enhance its utility and value in the future.</p>
@@ -511,10 +441,10 @@ we’ll talk about what they are and then we’re going to create one ourselves.
 <p>A good narrative has one objective: to describe the process and workflow of your research so that you and others understand what was done, and ostensibly how to reproduce it, not only through the original notebook, but through any other means (copying, borrowing, etc.). The computational narrative truly emerges as a virtuous relationship between code, computation and the expository narrative and is more than just a description of what was done (though that is a great place to start in the absence of anything else), but rather a detailed account of the purpose of the notebook and the underlying work, the decisions that were made at various points in the notebook and <em>why</em> they were made. doing this not only provides the context necessary for others to understand what was done, how and why, but it is also an important reminder to yourself of these things, since as time moves forward, notebooks accumulate and it is easy to forget all of these details.</p>
 </section>
 <section id="narrative-structure-flow">
-<h4>Narrative Structure &amp; Flow<a class="headerlink" href="#narrative-structure-flow" title="Permalink to this headline">#</a></h4>
+<h4>Narrative Structure &amp; Flow<a class="headerlink" href="#narrative-structure-flow" title="Permalink to this heading">#</a></h4>
 <p>Often we are faced with developing a notebook with only minimal information about the end goal.  We want to write some code, produce some output (in the form of graphs, tables, etc) and then we might want to share that with others.  The notebook provides an opportunity to layer our work in a way that a commitment to one notebook is not necessary.  Indeed, our first notebooks are often scratch notebooks (but many times we don’t actually see them that way and they end up as the final notebook).  We would like to avoid the problem of scratch notebooks turning into final notebooks and so planning your narrative structure (once you get going in a direction) is important.</p>
 <p>A single notebook should be designed to guide the narrative through a problem, computational resolution (or attempt at resolution) and summary of outcome(s).  This will include:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><strong>problem</strong> exposition or purpose,</p></li>
 <li><p><strong>code</strong> (with output) and</p></li>
 <li><p><strong>interpretation</strong> and summary.</p></li>
@@ -528,10 +458,10 @@ we’ll talk about what they are and then we’re going to create one ourselves.
 <p>You may eventually come to the conclusion that a single large notebook is confusing and diminishes the value of your work.  You may find some parts of your narrative are algorithmically intensive and need addition exposition or more complete mathematical treatment.  Some of that explanation may be in the form of code cells, and it may be appropriate to develop multiple notebooks to manage the complexity of your work.  Recognizing this early can be an important step toward good narratives.</p>
 </section>
 <section id="computational-flow">
-<h4>Computational Flow<a class="headerlink" href="#computational-flow" title="Permalink to this headline">#</a></h4>
+<h4>Computational Flow<a class="headerlink" href="#computational-flow" title="Permalink to this heading">#</a></h4>
 <p>The computational flow of your notebook refers to the <em>code cells</em> of your notebook.  This might also include the output of those cells, including graphics, plots and visualizations, as well as text output (e.g. the result of a calculation).  There are simple steps to keep your code as tidy as possible so that it is not only reusable, but that cells can be rerun easily with their appropriate contexts and imports.</p>
 <p>Consider:</p>
-<ol>
+<ol class="arabic">
 <li><p><strong>keep one time imports where they are used</strong>: if a cell can be run in one execution, but involves imports that do not get used by other cells in the notebook, just include them in that cell. For example, a cell that uses the <a class="reference external" href="https://docs.python.org/3/library/csv.html"><code class="docutils literal notranslate"><span class="pre">csv</span></code> module</a> and nowhere else in the notebook allows it to be executed standalone when it needs to:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -558,7 +488,7 @@ we’ll talk about what they are and then we’re going to create one ourselves.
 <p>so what’s in a narrative you have images of visuals usually those the output cells you know if you ran a patters or you ran a plot or you read a book whatever out lot of times you’ll have your formulas exploration of algorithms you have links to other notebooks other data other modules and those are the no books could be a collection of notebooks that you is up our part of your broader narrative</p>
 </section>
 <section id="cross-notebook-linking-table-of-contents-and-flow">
-<h4>Cross-notebook Linking, Table of Contents and Flow<a class="headerlink" href="#cross-notebook-linking-table-of-contents-and-flow" title="Permalink to this headline">#</a></h4>
+<h4>Cross-notebook Linking, Table of Contents and Flow<a class="headerlink" href="#cross-notebook-linking-table-of-contents-and-flow" title="Permalink to this heading">#</a></h4>
 <p>One of the most profoundly useful and perhaps underused features of the notebook ecosystem, is notebook linking.  By this we mean developing notebooks that link to other notebooks that represent a larger collection.  For example, when a single notebook it large and complex, it may be necessary to consider breaking it up into other notebooks.  Unifying one more more notebooks is then a simple matter of linking them.</p>
 <p>For example, a markdown cell in a notebook linking to another would look like this:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>So at once, we have shown the first part of the analysis.  
@@ -574,7 +504,7 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
 <p>Should you choose to develop a single linear notebook, a table of contents can be a good idea.  You can manually create your TOC or try one of several methods for automatically creating it.  Either way, your notebooks will increase their utility by doing this.</p>
 </section>
 <section id="citation">
-<h4>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">#</a></h4>
+<h4>Citation<a class="headerlink" href="#citation" title="Permalink to this heading">#</a></h4>
 <p>Citation, acknowledgement and attribution are the cornerstone of collaboration and are at the heart of scientific communication.  A notebook may have citations to many things: academic papers, datasets, software, external resources, computing resources, licenses, etc.  It should be a reminder to you that attribution is an important thing to your own notebook as well. When you share your notebook with others, or submit is as a supplement to a published paper or presentation, it may be worth considering getting a permanent identifier such as a DOI (Digital Object Identifier) and providing appropriate attribution instructions in your own notebook, especially if they are in Github or some other public repository.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -583,10 +513,10 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
 </section>
 </section>
 <section id="git-and-github">
-<h3>git and Github<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h3>
+<h3>git and Github<a class="headerlink" href="#git-and-github" title="Permalink to this heading">#</a></h3>
 <p>Though notebooks do not require it, the use of git and Github are highly valuable tools in your scientific workflow.  But before using either, it should be clear what each of these tools are and what they bring to the table for your work.</p>
 <section id="git">
-<h4>git<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h4>
+<h4>git<a class="headerlink" href="#git" title="Permalink to this heading">#</a></h4>
 <p><span class="xref myst">git</span> in its simplest form, is a tool that allows you to keep track of changes to files.  Build atop the heritage of software revision control systems, which function to make sure source code changes can be tracked, and in the collaborative case, merged or otherwise monitored by a team of people (developers, etc.).  git is its own tool and should not be confounded with <em>Github</em>, which can be seen as a collaborative front end to tools like git.  You can use git without Github, and while <em>technically</em> you can use Github without git, intermediate and advanced use require it.</p>
 <p>There are really three aspects of git that you should be familiar with:</p>
 <ul class="simple">
@@ -609,8 +539,7 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
 </ul>
 </section>
 <section id="github">
-<h4>Github<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h4>
-<p><img alt="https://github.com/" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" /></p>
+<h4>Github<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h4>
 <p>But one of the most friendly (and popular) front ends to git is <a class="reference external" href="https://github.com">Github</a>, but two other platforms <a class="reference external" href="https://gitlab.org">Gitlab</a> and <a class="reference external" href="https://bitbucket.org">Bitbucket</a> offer similar and equally good alternatives.  You are free to use whatever platforms make the most sense for you, your team and your project, though we will focus on Github here.</p>
 <p>Github is a website that provides front end access to git repositories, but more importantly, it provides an excellent platform for collaboration.  You can share code with other individuals, teams, researchers, etc.  You can privately or publicly share, and there are many additional functionalities to support your code and your team, many of which you may never find use for, or know even exist.</p>
 <p>Though you might only use Github with an eye toward its basic and limited functionality, it is nonetheless a platform that you cannot ignore and a basic working knowledge of what it provides will go a long way in your research career.</p>
@@ -631,7 +560,7 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -639,50 +568,122 @@ The second part can be found in [<span class="nt">notebook #2</span>](<span clas
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="welcome.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to SOARS 2023 Computational Thinking Workshop</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="welcome.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to SOARS 2023 Computational Thinking Workshop</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="week01b.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="week01b.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Python Fundamentals</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By The SOARS Program<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
-
-
       </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-computing-today">Scientific Computing Today</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-support-tools">Software Support Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter">Jupyter</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-notebooks-and-narratives">Structure of Notebooks and Narratives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-narratives">Computational Narratives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#narrative-structure-flow">Narrative Structure &amp; Flow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-flow">Computational Flow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-notebook-linking-table-of-contents-and-flow">Cross-notebook Linking, Table of Contents and Flow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github">git and Github</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#git">git</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github">Github</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Keith E. Maull & The SOARS Program
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

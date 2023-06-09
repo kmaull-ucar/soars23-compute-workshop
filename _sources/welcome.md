@@ -66,7 +66,7 @@ Wednesdays Noon - 1PM; virtual or in-person
 |  *1    |   **[Scientific computing, Computational Workflows and Jupyter/Python](./week01a)** | scientific computing today, (re)Introduction to Jupyter; understanding how git fits into your workflow; How Github/Gitlab/Bitbucket fit into your workflow; developing good computational narratives in Jupyter; Linux |
 |  1   | (June 09) <br/> **[Python Fundamentals](./week01b)**                    |  Python constructs, loops, dictionaries, data structures, core libraries, Python3 roadmap, Anaconda distro |
 |  *1   | <br/> **[Jupyter Fundamentals](./week01c)**                    |  how to build good notebooks; how, why and strategic notebook development |
-| *2  | **[Algorithms and Computational Thinking]()** |  	Computational thinking review; problem solving and thinking through algorithms; reducing complexity to increasing understanding and interpretability |
+| *2  | **[Algorithms and Computational Thinking](./week02a.md)** |  	Computational thinking review; problem solving and thinking through algorithms; reducing complexity to increasing understanding and interpretability |
 | 2 | (June 16) <br/> **Python Libraries for Geoscience I: Hands-on Overview**  | Core libraries in Python for Geo; when to use what; resources that you need to know about now; using some libraries in real-world demo |
 |  3    | (June 30) <br/> **Python Libraries for Geoscience II: Hands-on Data**  | Continuation of Geo libraries in Python with a hands-on focus on practical manipulation of data |
 |  4   | (July 14) <br/> **Presenting and Visualization in Python**  | Visualization tools and working in Jupyter for static and dynamic visualization; Pandas library visualization tricks |
